@@ -28,5 +28,10 @@
             <artifactId>lion-admin-dao</artifactId>
             <version>${lion-admin-dao.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.newotuch.lion</groupId>
+            <artifactId>lion-admin-dao</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>

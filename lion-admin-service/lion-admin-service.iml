@@ -90,5 +90,7 @@
     <orderEntry type="library" name="Maven: org.springmodules:spring-modules-cache:0.8a" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.14" level="project" />
     <orderEntry type="library" name="Maven: com.newtouch.lion:lion-admin-dao:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="module" module-name="lion-admin-dao" />
+    <orderEntry type="library" name="Maven: com.newotuch.lion:lion-admin-api:1.0-SNAPSHOT" level="project" />
   </component>
 </module>
