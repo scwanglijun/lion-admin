@@ -12,4 +12,12 @@
     <packaging>pom</packaging>
     <name>lion-admin-parent</name>
     <url>http://lion.newtouch.com</url>
+    <dependencyManagement>
+            <dependencies>
+                <dependency>
+                    <groupId>com.newotuch.lion</groupId>
+                    <artifactId>com.newtouch.lion-common</artifactId>
+                </dependency>
+            </dependencies>
+    </dependencyManagement>
 </project>

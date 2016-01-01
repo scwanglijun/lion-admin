@@ -18,5 +18,9 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.newotuch.lion</groupId>
+            <artifactId>com.newtouch.lion-common</artifactId>
+        </dependency>
     </dependencies>
 </project>
