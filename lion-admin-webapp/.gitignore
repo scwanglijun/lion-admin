@@ -2,3 +2,6 @@
 /.idea
 /target
 /com.newtouch.lion-webapp.iml
+/.settings/
+/.classpath
+/.project

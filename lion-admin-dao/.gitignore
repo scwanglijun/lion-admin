@@ -3,3 +3,6 @@
 /com.newtouch.lion-admin.iml
 /target
 /lion-admin-dao.iml
+/.classpath
+/.project
+/.settings/

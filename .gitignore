@@ -1,3 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
 /.idea
 /com.newtouch.lion-admin.iml
+/.settings/
+/.project
+/lion-admin-parent/
