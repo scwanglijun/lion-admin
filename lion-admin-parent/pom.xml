@@ -1,0 +1,15 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <groupId>com.newtouch.lion</groupId>
+        <artifactId>com.newtouch.lion-parent</artifactId>
+        <version>1.5</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.newotuch.lion</groupId>
+    <artifactId>lion-admin-parent</artifactId>
+    <version>1.5-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>lion-admin-parent</name>
+    <url>http://lion.newtouch.com</url>
+</project>
