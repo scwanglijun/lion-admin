@@ -21,6 +21,7 @@
         <dependency>
             <groupId>com.newotuch.lion</groupId>
             <artifactId>lion-admin-api</artifactId>
+           	<version>${lion-admin-api.version}</version>
         </dependency>
     </dependencies>
 </project>

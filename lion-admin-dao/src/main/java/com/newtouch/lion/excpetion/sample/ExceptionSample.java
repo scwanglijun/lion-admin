@@ -6,7 +6,7 @@ package com.newtouch.lion.excpetion.sample;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.newtouch.lion.common.logger.util.LoggerUtil;
+import com.newtouch.lion.common.util.LoggerUtil;
 import com.newtouch.lion.exception.BusinessException;
 import com.newtouch.lion.exception.SystemException;
 
