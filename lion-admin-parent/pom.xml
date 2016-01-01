@@ -12,11 +12,28 @@
     <packaging>pom</packaging>
     <name>lion-admin-parent</name>
     <url>http://lion.newtouch.com</url>
+    <properties>
+        <lion-admin-api.version>1.0-SNAPSHOT</lion-admin-api.version>
+        <lion-admin-dao.version>1.0-SNAPSHOT</lion-admin-dao.version>
+        <lion-admin-service.version>1.0-SNAPSHOT</lion-admin-service.version>
+        <lion-admin-parent.version>1.0-SNAPSHOT</lion-admin-parent.version>
+    </properties>
     <dependencyManagement>
             <dependencies>
                 <dependency>
-                    <groupId>com.newotuch.lion</groupId>
-                    <artifactId>com.newtouch.lion-common</artifactId>
+                    <groupId>com.newtouch.lion</groupId>
+                    <artifactId>lion-admin-api</artifactId>
+                    <version>${lion-admin-api.version}</version>
+                </dependency>
+                <dependency>
+                    <groupId>com.newtouch.lion</groupId>
+                    <artifactId>lion-admin-dao</artifactId>
+                    <version>${lion-admin-dao.version}</version>
+                </dependency>
+                <dependency>
+                    <groupId>com.newtouch.lion</groupId>
+                    <artifactId>lion-admin-service</artifactId>
+                    <version>${lion-admin-service.version}</version>
                 </dependency>
             </dependencies>
     </dependencyManagement>
