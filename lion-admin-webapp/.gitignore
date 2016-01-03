@@ -1,6 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 /.idea
 /target
+/lion-admin-webapp.iml
 /com.newtouch.lion-webapp.iml
 /.settings/
 /.classpath

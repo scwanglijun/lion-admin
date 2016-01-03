@@ -33,6 +33,16 @@
             <artifactId>lion-admin-service</artifactId>
             <version>${lion-admin-service.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.newotuch.lion</groupId>
+            <artifactId>com.newtouch.lion-webcore</artifactId>
+            <version>${lion-webcore.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.newtouch.lion</groupId>
+            <artifactId>com.newtouch.lion-monitor</artifactId>
+            <version>${lion-monitor.version}</version>
+        </dependency>
     </dependencies>
     <build>
         <finalName>admin</finalName>
