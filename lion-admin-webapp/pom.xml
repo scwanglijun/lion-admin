@@ -1,15 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <parent>
-        <groupId>com.newotuch.lion</groupId>
-        <artifactId>lion-admin-parent</artifactId>
-        <version>1.0-SNAPSHOT</version>
-        <relativePath>../lion-admin-parent/pom.xml</relativePath>
-    </parent>
+   <parent>
+		<groupId>com.newotuch.lion</groupId>
+		<artifactId>lion-admin-parent</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<relativePath>../lion-admin-parent/pom.xml</relativePath>
+	</parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>lion-admin-webapp</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <version>1.1-SNAPSHOT</version>
+ 
     <name>lion-admin-webapp</name>
     <url>http://lion.newtouch.com</url>
     <dependencies>
@@ -21,30 +21,26 @@
         <dependency>
             <groupId>com.newtouch.lion</groupId>
             <artifactId>lion-admin-api</artifactId>
-            <version>${lion-admin-api.version}</version>
         </dependency>
         <dependency>
             <groupId>com.newtouch.lion</groupId>
             <artifactId>lion-admin-dao</artifactId>
-            <version>${lion-admin-dao.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.newotuch.lion</groupId>
+         <dependency>
+            <groupId>com.newtouch.lion</groupId>
             <artifactId>lion-admin-service</artifactId>
-            <version>${lion-admin-service.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.newotuch.lion</groupId>
+            <groupId>com.newtouch.lion</groupId>
             <artifactId>com.newtouch.lion-webcore</artifactId>
-            <version>${lion-webcore.version}</version>
         </dependency>
         <dependency>
             <groupId>com.newtouch.lion</groupId>
             <artifactId>com.newtouch.lion-monitor</artifactId>
-            <version>${lion-monitor.version}</version>
         </dependency>
     </dependencies>
     <build>
         <finalName>admin</finalName>
     </build>
+    <groupId>com.newtouch.lion</groupId>
 </project>
