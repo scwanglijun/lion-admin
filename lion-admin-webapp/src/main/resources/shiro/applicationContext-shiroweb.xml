@@ -29,8 +29,7 @@
 	</bean>
 
 	<!-- 会话ID生成器 -->
-	<bean id="sessionIdGenerator"
-		class="org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator" />
+	<bean id="sessionIdGenerator" class="org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator" />
 
 	<!-- 会话Cookie模板 -->
 	<bean id="sessionIdCookie" class="org.apache.shiro.web.servlet.SimpleCookie">

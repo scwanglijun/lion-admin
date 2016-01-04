@@ -21,6 +21,9 @@
 	<import resource="classpath:tx/applicationContext-tx.xml" />
 	<!-- Dao End -->
 
+	<!-- MyBatis Start
+	<import resource="classpath:mybatis/mybatis-context.xml" /> -->
+	<!-- MyBatis End -->
 	<!-- shiro Start-->
 	<import resource="classpath:shiro/applicationContext-shiroweb.xml" />
 	<import resource="classpath:freemarker/applicationContext-freemarker.xml" />
