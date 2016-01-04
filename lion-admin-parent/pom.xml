@@ -13,6 +13,8 @@
     <name>lion-admin-parent</name>
     <url>http://lion.newtouch.com</url>
     <properties>
+        <lion-webcore.version>1.5</lion-webcore.version>
+        <lion-monitor.version>1.5</lion-monitor.version>
         <lion-admin-api.version>1.0-SNAPSHOT</lion-admin-api.version>
         <lion-admin-dao.version>1.0-SNAPSHOT</lion-admin-dao.version>
         <lion-admin-service.version>1.0-SNAPSHOT</lion-admin-service.version>
@@ -34,6 +36,11 @@
                     <groupId>com.newtouch.lion</groupId>
                     <artifactId>lion-admin-service</artifactId>
                     <version>${lion-admin-service.version}</version>
+                </dependency>
+                <dependency>
+                    <groupId>com.newtouch.lion</groupId>
+                    <artifactId>com.newtouch.lion-webcore</artifactId>
+                    <version>${lion-webcore.version}</version>
                 </dependency>
             </dependencies>
     </dependencyManagement>

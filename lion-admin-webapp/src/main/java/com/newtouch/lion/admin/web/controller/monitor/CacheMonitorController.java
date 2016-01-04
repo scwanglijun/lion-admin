@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.newtouch.lion.model.cache.CacheManagerModel;
 import com.newtouch.lion.service.cache.ApplicationCacheManager;
-import com.newtouch.lion.web.controller.AbstractController;
 
 /**
  * <p>
