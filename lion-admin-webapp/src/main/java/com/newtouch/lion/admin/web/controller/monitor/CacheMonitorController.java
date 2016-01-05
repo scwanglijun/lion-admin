@@ -59,7 +59,7 @@ public class CacheMonitorController extends AbstractController{
 	
 	@RequestMapping(value="/index",method=RequestMethod.GET)
 	public String index(Model model){
-		CacheManagerModel managerModel=applicationCacheManager.getCaches();
+		CacheManagerModel managerModel=applicationCacheManager.getCacheManager();
 		logger.info("{}",managerModel);
 		model.addAttribute("managerModel",managerModel);
 		return INDEX_RETRUN;
@@ -69,8 +69,7 @@ public class CacheMonitorController extends AbstractController{
 	@RequestMapping("/lists")
 	@ResponseBody
 	public String list() {
-		CacheManagerModel cacheManagerModel = applicationCacheManager
-				.getCaches();
+		CacheManagerModel cacheManagerModel = applicationCacheManager.getCaches();
 		List<CacheModel> caches = cacheManagerModel.getCacheModels();
 		Set<String> properties = dataColumnService
 				.doFindColumnsByTableId(INDEX_LIST_TB);

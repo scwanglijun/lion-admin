@@ -83,8 +83,7 @@ public class CodeListController extends AbstractController{
 	private CodeListService codeListService;
 	@Autowired
 	protected DataColumnService dataColumnService;
-	@Autowired
-	private CodeTypeService codeTypeService;
+ 
 	/**DataGrid表格*/
 	@Autowired
 	private DataGridService dataGridService;
