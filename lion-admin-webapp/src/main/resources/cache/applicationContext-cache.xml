@@ -13,22 +13,8 @@
 
 	<!-- 缓存整合 -->
 	<cache:annotation-driven />
-	<bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean"  p:configLocation="classpath:ehcache.xml" p:shared="false" />
-	<!-- 系统参数缓存-->
-	<bean   id="sysParameterEhCache"  class="org.springframework.cache.ehcache.EhCacheFactoryBean">
-		<property name="cacheManager" ref="cacheManager"/>
-		<property name="cacheName"  value="sysParameterEhCache"/>
-	</bean>
-	<bean id="sysParameterCache" class="com.newtouch.lion.cache.impl.EhCacheBasedObjectCache">
-		<property name="cache"  ref="sysParameterEhCache"/>
-	</bean>
-	<!-- 系统参数缓存-->
-	<bean   id="codeListEhCache"  class="org.springframework.cache.ehcache.EhCacheFactoryBean">
-		<property name="cacheManager" ref="cacheManager"/>
-		<property name="cacheName"  value="codeListEhCache"/>
-	</bean>
-	<bean id="codeListCache" class="com.newtouch.lion.cache.impl.EhCacheBasedObjectCache">
-		<property name="cache"  ref="codeListEhCache"/>
-	</bean>
+	<bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager" p:cache-manager-ref="ehcache"/>
+	<!-- EhCache library setup -->
+	<bean id="ehcache" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean" p:config-location="classpath:ehcache.xml" p:shared="true"/>
 </beans>
 
