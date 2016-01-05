@@ -59,7 +59,7 @@ public class CacheMonitorController extends AbstractController{
 	
 	@RequestMapping(value="/index",method=RequestMethod.GET)
 	public String index(Model model){
-		CacheManagerModel managerModel=applicationCacheManager.getCacheManager();
+		CacheManagerModel managerModel=applicationCacheManager.getCaches();
 		logger.info("{}",managerModel);
 		model.addAttribute("managerModel",managerModel);
 		return INDEX_RETRUN;
