@@ -70,7 +70,7 @@ public interface DataColumnService {
 	/**
 	 * 判断DataColumn的name和type是否已存在，
 	 * @param name
-	 * @param type
+	 * @param
 	 * @return  boolean
 	 * @author maojiawei
 	 * */
@@ -84,7 +84,7 @@ public interface DataColumnService {
 	public DataColumn doFindTypeByName(String name);
 	/***
 	 * 根据name称获取DataColumn
-	 * @param datagirdId
+	 * @param
 	 * @param name
 	 * @author maojiawei
 	 * @return {@link DataColumn}
@@ -93,7 +93,7 @@ public interface DataColumnService {
 	/***
 	 * 保存DataColumn对象
 	 * @author maojiawei
-	 * @param DataColumn
+	 * @param
 	 */
 	public void doCreate(DataColumn dataColumn);
 }

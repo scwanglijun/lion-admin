@@ -12,8 +12,35 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
 	<!-- 缓存整合 -->
 	<cache:annotation-driven />
-	<bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager" p:cache-manager-ref="ehcache"/>
+	<bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager">
+		<property name="cacheManager" ref="ehcache"/>
+	</bean>
 	<!-- EhCache library setup -->
-	<bean id="ehcache" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean" p:config-location="classpath:ehcache.xml" p:shared="true"/>
+	<bean id="ehcache" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
+		<property name="configLocation"  value="classpath:ehcache.xml"/>
+		<property name="shared" value="true"/>
+	</bean>
+
+
+
+	<!-- 系统参数缓存-->
+	<bean   id="sysParameterEhCache"  class="org.springframework.cache.ehcache.EhCacheFactoryBean">
+		<property name="cacheManager" ref="ehcache"/>
+		<property name="cacheName"  value="sysParameterEhCache"/>
+	</bean>
+	<bean id="sysParameterCache" class="com.newtouch.lion.cache.impl.EhCacheBasedObjectCache">
+		<property name="cache"  ref="sysParameterEhCache"/>
+	</bean>
+
+
+
+	<util:list  id="abstractInitializedCaches"  list-class="java.util.ArrayList" value-type="com.newtouch.lion.cache.load.impl.AbstractInitializedCacheImpl">
+		<!--初始化Code缓存  -->
+		<ref  bean="parameterCacheService"/>
+	</util:list>
+	<!-- 缓存初始化加载 -->
+	<bean class="com.newtouch.lion.listener.ApplicationInitializedListenerService">
+		<property name="abstractInitializedCacheServices"  ref="abstractInitializedCaches"/>
+	</bean>
 </beans>
 

@@ -6,6 +6,9 @@
 */
 package com.newtouch.lion.admin.web.controller.monitor; 
 
+import com.newtouch.lion.json.JSONParser;
+import com.newtouch.lion.model.cache.CacheModel;
+import com.newtouch.lion.service.datagrid.DataColumnService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,6 +18,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.newtouch.lion.model.cache.CacheManagerModel;
 import com.newtouch.lion.service.cache.ApplicationCacheManager;
 import com.newtouch.lion.web.controller.AbstractController;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.List;
+import java.util.Set;
 
 /**
  * <p>
@@ -36,9 +43,15 @@ import com.newtouch.lion.web.controller.AbstractController;
 @Controller
 @RequestMapping("/monitor/cache")
 public class CacheMonitorController extends AbstractController{
-	
+
+
+
+	private static final String INDEX_LIST_TB = "sys_cachelist_tb";
+
 	@Autowired
 	private ApplicationCacheManager applicationCacheManager;
+	@Autowired
+	private DataColumnService dataColumnService;
 	/***
 	 *缓存监控首页
 	 */
@@ -47,8 +60,21 @@ public class CacheMonitorController extends AbstractController{
 	@RequestMapping(value="/index",method=RequestMethod.GET)
 	public String index(Model model){
 		CacheManagerModel managerModel=applicationCacheManager.getCaches();
+		logger.info("{}",managerModel);
 		model.addAttribute("managerModel",managerModel);
 		return INDEX_RETRUN;
+	}
+
+	/** 缓存管理列表 */
+	@RequestMapping("/lists")
+	@ResponseBody
+	public String list() {
+		CacheManagerModel cacheManagerModel = applicationCacheManager
+				.getCaches();
+		List<CacheModel> caches = cacheManagerModel.getCacheModels();
+		Set<String> properties = dataColumnService
+				.doFindColumnsByTableId(INDEX_LIST_TB);
+		return JSONParser.toJSONDataGridString(caches, properties);
 	}
 }
 

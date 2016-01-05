@@ -33,8 +33,12 @@
 		diskExpiryThreadIntervalSeconds="1200" diskSpoolBufferSizeMB="30"
 		maxElementsOnDisk="1000">	
 	</cache>
-	
-	
+	<cache name="codeCache" maxElementsInMemory="200"
+		eternal="false" timeToIdleSeconds="7200" timeToLiveSeconds="3600"
+		overflowToDisk="true" memoryStoreEvictionPolicy="LRU" diskPersistent="false"
+		diskExpiryThreadIntervalSeconds="1200" diskSpoolBufferSizeMB="30"
+		maxElementsOnDisk="1000">
+	</cache>
 	<!-- codeListEhCache系统参数设置为：内存大小为：200，eternal="false" 非永久有效  timeToIdleSeconds="7200"闲置时间 -->
 	<cache name="demoEhcache" maxElementsInMemory="200"
 		eternal="false" timeToIdleSeconds="7200" timeToLiveSeconds="3600" 
