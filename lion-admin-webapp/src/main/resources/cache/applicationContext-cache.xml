@@ -14,8 +14,6 @@
 	<!-- 缓存整合 -->
 	<cache:annotation-driven />
 	<bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean"  p:configLocation="classpath:ehcache.xml" p:shared="false" />
-	 
-		
 	<!-- 系统参数缓存-->
 	<bean   id="sysParameterEhCache"  class="org.springframework.cache.ehcache.EhCacheFactoryBean">
 		<property name="cacheManager" ref="cacheManager"/>
@@ -24,8 +22,6 @@
 	<bean id="sysParameterCache" class="com.newtouch.lion.cache.impl.EhCacheBasedObjectCache">
 		<property name="cache"  ref="sysParameterEhCache"/>
 	</bean>
-	
-	
 	<!-- 系统参数缓存-->
 	<bean   id="codeListEhCache"  class="org.springframework.cache.ehcache.EhCacheFactoryBean">
 		<property name="cacheManager" ref="cacheManager"/>
