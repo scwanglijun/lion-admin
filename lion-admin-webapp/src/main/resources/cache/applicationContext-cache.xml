@@ -33,13 +33,5 @@
 	<bean id="codeListCache" class="com.newtouch.lion.cache.impl.EhCacheBasedObjectCache">
 		<property name="cache"  ref="codeListEhCache"/>
 	</bean>
-			
-	<util:list  id="abstractInitializedCaches"  list-class="java.util.ArrayList" value-type="com.newtouch.lion.cache.load.impl.AbstractInitializedCacheImpl">
-		<!--初始化Code缓存  -->
-		<ref  bean="parameterCacheService"/>
-	</util:list>
-	<!-- 缓存初始化加载 -->
-	<bean class="com.newtouch.lion.listener.ApplicationInitializedListenerService">
-		<property name="abstractInitializedCacheServices"  ref="abstractInitializedCaches"/>
-	</bean>
 </beans>
+
