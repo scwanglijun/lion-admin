@@ -3,9 +3,12 @@ package com.newtouch.lion.service.cache.impl;
 import com.newtouch.lion.model.cache.CacheManagerModel;
 import com.newtouch.lion.model.system.CodeList;
 import com.newtouch.lion.service.cache.AbstractApplicationCacheManager;
+import com.newtouch.lion.service.cache.ApplicationCacheService;
 import com.newtouch.lion.service.system.CodeListService;
 import com.newtouch.lion.service.system.CodeService;
 
+import net.sf.ehcache.Cache;
+import net.sf.ehcache.CacheManager;
 import org.apache.poi.util.SystemOutLogger;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,7 +27,7 @@ import java.util.Map;
  * Created by wanglijun on 16/1/5.
  */
 @Service
-public class ApplicationCacheManagerImpl  extends AbstractApplicationCacheManager{
+public class ApplicationCacheManagerImpl  extends AbstractApplicationCacheManager implements ApplicationCacheService{
 
 
     private static  final String 	CAHCE_LIST="CAHCE_LIST";
@@ -43,5 +46,20 @@ public class ApplicationCacheManagerImpl  extends AbstractApplicationCacheManage
            list.add(this.findCacheManager(codeList.getCodeValue()));
        }
         return list;
+    }
+
+
+    @Override
+    public void clear(String ehcacheName) {
+        logger.warn("clear cache:{}",ehcacheName);
+        CacheManager cacheManager =CacheManager.getCacheManager(ehcacheName);
+        cacheManager.clearAll();
+    }
+    @Override
+    public void clear(String ehcacheName,String cacheName) {
+        logger.warn("clear:{},{}",ehcacheName,cacheName);
+        CacheManager cacheManager =CacheManager.getCacheManager(ehcacheName);
+        Cache cache=cacheManager.getCache(cacheName);
+        cache.removeAll();
     }
 }

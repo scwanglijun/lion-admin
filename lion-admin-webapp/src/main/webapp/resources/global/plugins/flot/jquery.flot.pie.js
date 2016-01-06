@@ -676,7 +676,7 @@ More detail and specific examples can be found in the included HTML file.
 				highlight(item.series, eventname);
 			}
 
-			// trigger any hover bind events
+			// trigger any hover message events
 
 			var pos = { pageX: e.pageX, pageY: e.pageY };
 			target.trigger(eventname, [pos, item]);

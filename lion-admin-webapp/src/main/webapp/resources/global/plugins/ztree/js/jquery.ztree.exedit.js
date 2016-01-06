@@ -74,7 +74,7 @@
 	},
 	//default cache of exedit
 	_initCache = function(treeId) {},
-	//default bind event of exedit
+	//default message event of exedit
 	_bindEvent = function(setting) {
 		var o = setting.treeObj;
 		var c = consts.event;

@@ -66,7 +66,7 @@
 	},
 	//default cache of excheck
 	_initCache = function(treeId) {},
-	//default bind event of excheck
+	//default message event of excheck
 	_bindEvent = function(setting) {
 		var o = setting.treeObj,
 		c = consts.event;

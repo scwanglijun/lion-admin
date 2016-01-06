@@ -236,7 +236,7 @@
 
                 //when the mouse goes over the range element, we set the "hover" stars.
                 if (!itemdata('wired')) {
-                    range.bind('touchmove touchend', touchHandler); //bind touch events
+                    range.bind('touchmove touchend', touchHandler); //message touch events
                     range.mousemove(function (e) {
                         var score = calcRawScore(this, e);
                         setHover(score);

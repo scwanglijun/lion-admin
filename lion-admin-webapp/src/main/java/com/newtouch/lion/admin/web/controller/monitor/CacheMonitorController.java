@@ -6,19 +6,22 @@
 */
 package com.newtouch.lion.admin.web.controller.monitor; 
 
+import com.apple.eawt.Application;
+import com.newtouch.lion.admin.web.model.monitor.CacheVo;
 import com.newtouch.lion.json.JSONParser;
 import com.newtouch.lion.model.cache.CacheModel;
+import com.newtouch.lion.service.cache.ApplicationCacheService;
 import com.newtouch.lion.service.datagrid.DataColumnService;
+import com.newtouch.lion.web.message.BindMessage;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 import com.newtouch.lion.model.cache.CacheManagerModel;
 import com.newtouch.lion.service.cache.ApplicationCacheManager;
 import com.newtouch.lion.web.controller.AbstractController;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 import java.util.Set;
@@ -52,6 +55,8 @@ public class CacheMonitorController extends AbstractController{
 	private ApplicationCacheManager applicationCacheManager;
 	@Autowired
 	private DataColumnService dataColumnService;
+	@Autowired
+	private ApplicationCacheService applicationCacheService;
 	/***
 	 *缓存监控首页
 	 */
@@ -74,6 +79,24 @@ public class CacheMonitorController extends AbstractController{
 		Set<String> properties = dataColumnService
 				.doFindColumnsByTableId(INDEX_LIST_TB);
 		return JSONParser.toJSONDataGridString(caches, properties);
+	}
+
+
+	@RequestMapping("/clear")
+	@ResponseBody
+	public BindMessage clear(@ModelAttribute("cacheVo") CacheVo cacheVo){
+		logger.info("cacheVo:{}",cacheVo.toString());
+		//当cacheManagerName 为空,提示不能清除缓存,
+		if(StringUtils.isEmpty(cacheVo.getEhcacheName())){
+			return new BindMessage(Boolean.FALSE,"ehcacheName 不能为空!");
+		}
+		if(StringUtils.isEmpty(cacheVo.getCacheName())){
+			logger.info("清缓存");
+			applicationCacheService.clear(cacheVo.getEhcacheName());
+			return new BindMessage(Boolean.TRUE,"{0}清除成功!",new Object[]{cacheVo.getEhcacheName()});
+		}
+		applicationCacheService.clear(cacheVo.getEhcacheName(),cacheVo.getCacheName());
+		return  new BindMessage(Boolean.TRUE,"{0}-{1}清除成功!",new Object[]{cacheVo.getEhcacheName(),cacheVo.getCacheName()});
 	}
 }
 

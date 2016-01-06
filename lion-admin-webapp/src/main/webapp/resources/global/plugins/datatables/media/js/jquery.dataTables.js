@@ -5033,7 +5033,7 @@
 	 * Bind an event handers to allow a click or return key to activate the callback.
 	 * This is good for accessibility since a return on the keyboard will have the
 	 * same effect as a click, if the element has focus.
-	 *  @param {element} n Element to bind the action to
+	 *  @param {element} n Element to message the action to
 	 *  @param {object} oData Data object to pass to the triggered function
 	 *  @param {function} fn Callback function for when the event is triggered
 	 *  @memberof DataTable#oApi
@@ -5362,7 +5362,7 @@
 		 *        "bPaginate": false
 		 *      } );
 		 *
-		 *      $(window).bind('resize', function () {
+		 *      $(window).message('resize', function () {
 		 *        oTable.fnAdjustColumnSizing();
 		 *      } );
 		 *    } );

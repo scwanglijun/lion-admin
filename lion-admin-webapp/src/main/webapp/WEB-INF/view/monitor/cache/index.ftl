@@ -3,10 +3,15 @@
 <html lang="en" class="no-js">
 <head> 
 <title>Cache 监控信息</title>
+<link href="${base}/resources/global/plugins/bootstrap-toastr/toastr.css" rel="stylesheet" type="text/css">
+<link href="${base}/resources/global/css/lion.css" rel="stylesheet" type="text/css" />
 <!--lion UI JS Start-->
+<script src="${base}/resources/global/plugins/bootstrap-toastr/toastr.min.js"></script>
+<script src="${base}/resources/admin/pages/scripts/ui-toastr.js"></script>
+<script src="${base}/resources/global/plugins/bootbox/bootbox.min.js" type="text/javascript"></script>
 <script src="${base}/resources/global/js/lion.js" type="text/javascript"></script>
 <script src="${base}/resources/admin/scripts/admin-common.js"></script>
-<script src="${base}/resources/admin/scripts/system/systeminfo.js" type="text/javascript"></script>
+<script src="${base}/resources/admin/scripts/monitor/cache.js" type="text/javascript"></script>
 </head>
 <body class="page-header-fixed page-sidebar-closed-hide-logo page-sidebar-closed-hide-logo">
 				<!-- BEGIN PAGE CONTENT INNER -->
@@ -41,7 +46,7 @@
 										<th>${item.size!}</th>
 										<td>${item.statusName!}</td>
 										<td>
-											<a id="btnDelete" class="btn btn-sm red">
+											<a id="btnManagerClear" class="btn btn-sm red btn-manager-clear" data-ehcachename="${item.name!}">
                                             <i class="fa fa-times"></i>
 										 		清除
                                         	</a>
@@ -84,7 +89,7 @@
 								<tbody>
 								<#list managerModels as managerModel>
 										<#list managerModel.cacheModels as item>
-											<tr>
+											<tr class="${managerModel.name!}">
 												<td>${item.name!}</td>
 												<th>${item.size}</th>
 												<td>${item.memoryStoreSize}</td>
@@ -93,7 +98,7 @@
 												<td>${item.inMemoryHits}</td>
 												<td>${item.memoryStoreEvictionPolicy}</td>
                                                 <td>
-                                                    <a id="btnDelete" class="btn btn-sm red">
+                                                    <a id="btnCacheClear" class="btn btn-sm red btn-cache-clear" data-cachename="${item.name!}" data-ehcachename="${managerModel.name!}">
                                                         <i class="fa fa-times"></i>
                                                         清除
                                                     </a>

@@ -1932,7 +1932,7 @@ define('moxie/core/EventTarget', [
 			/**
 			Alias for addEventListener
 
-			@method bind
+			@method message
 			@protected
 			*/
 			bind: function() {
@@ -2845,7 +2845,7 @@ define('moxie/runtime/RuntimeClient', [
 						initialize(items);
 					});
 
-					/*runtime.bind('Exception', function() { });*/
+					/*runtime.message('Exception', function() { });*/
 
 					// check if runtime managed to pick-up operational mode
 					if (!runtime.mode) {
@@ -5619,7 +5619,7 @@ define("moxie/image/Image", [
 			@param {Boolean|Object} [mixed]
 			*/
 			load: function() {
-				// this is here because to bind properly we need an uid first, which is created above
+				// this is here because to message properly we need an uid first, which is created above
 				this.bind('Load Resize', function() {
 					_updateInfo.call(this);
 				}, 999);
@@ -5815,7 +5815,7 @@ define("moxie/image/Image", [
 								// some shims (Flash/SilverLight) reinitialize, if parent element is hidden, reordered or it's
 								// position type changes (in Gecko), but since we basically need this only in IEs 6/7 and
 								// sometimes 8 and they do not have this problem, we can comment this for now
-								/*tr.bind("RuntimeInit", function(e, runtime) {
+								/*tr.message("RuntimeInit", function(e, runtime) {
 									tr.destroy();
 									runtime.destroy();
 									onResize.call(self); // re-feed our image data

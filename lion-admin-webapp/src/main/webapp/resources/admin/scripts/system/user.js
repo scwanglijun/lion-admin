@@ -302,10 +302,10 @@ $(function() {
 
 	 //导出Excel
 	 $('#btnExport').on('click',function(){
-	 var params=queryForm.serialize(),
-        dgtableId=userdg.attr('id');
-    lion.web.exportfn({url:'export.json',data:params,tableId:dgtableId});
-    return;
+	     var params=queryForm.serialize(),
+         dgtableId=userdg.attr('id');
+         lion.web.exportfn({url:'export.json',data:params,tableId:dgtableId});
+         return;
 	 });	
 });
 

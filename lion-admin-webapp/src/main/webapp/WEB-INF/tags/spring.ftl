@@ -89,17 +89,17 @@
 <#macro url relativeUrl extra...><#if extra?? && extra?size!=0>${springMacroRequestContext.getContextUrl(relativeUrl,extra)}<#else>${springMacroRequestContext.getContextUrl(relativeUrl)}</#if></#macro>
 
 <#--
- * bind
+ * message
  *
- * Exposes a BindStatus object for the given bind path, which can be
+ * Exposes a BindStatus object for the given message path, which can be
  * a bean (e.g. "person") to get global errors, or a bean property
  * (e.g. "person.name") to get field errors. Can be called multiple times
- * within a form to bind to multiple command objects and/or field names.
+ * within a form to message to multiple command objects and/or field names.
  *
  * This macro will participate in the default HTML escape setting for the given
  * RequestContext. This can be customized by calling "setDefaultHtmlEscape"
  * on the "springMacroRequestContext" context variable, or via the
- * "defaultHtmlEscape" context-param in web.xml (same as for the JSP bind tag).
+ * "defaultHtmlEscape" context-param in web.xml (same as for the JSP message tag).
  * Also regards a "htmlEscape" variable in the namespace of this library.
  *
  * Producing no output, the following context variable will be available
@@ -109,7 +109,7 @@
  *   spring.status : a BindStatus instance holding the command object name,
  *   expression, value, and error messages and codes for the path supplied
  *
- * @param path : the path (string value) of the value required to bind to.
+ * @param path : the path (string value) of the value required to message to.
  *   Spring defaults to a command name of "command" but this can be overridden
  *   by user config.
  -->
@@ -131,7 +131,7 @@
 <#--
  * bindEscaped
  *
- * Similar to spring:bind, but takes an explicit HTML escape flag rather
+ * Similar to spring:message, but takes an explicit HTML escape flag rather
  * than relying on the default HTML escape setting.
  -->
 <#macro bindEscaped path, htmlEscape>
@@ -148,10 +148,10 @@
 <#--
  * formInput
  *
- * Display a form input field of type 'text' and bind it to an attribute
+ * Display a form input field of type 'text' and message it to an attribute
  * of a command or bean.
  *
- * @param path the name of the field to bind to
+ * @param path the name of the field to message to
  * @param attributes any additional attributes for the element (such as class
  *    or CSS styles or size
  -->
@@ -163,12 +163,12 @@
 <#--
  * formPasswordInput
  *
- * Display a form input field of type 'password' and bind it to an attribute
+ * Display a form input field of type 'password' and message it to an attribute
  * of a command or bean. No value will ever be displayed. This functionality
  * can also be obtained by calling the formInput macro with a 'type' parameter
  * of 'password'.
  *
- * @param path the name of the field to bind to
+ * @param path the name of the field to message to
  * @param attributes any additional attributes for the element (such as class
  *    or CSS styles or size
  -->
@@ -179,11 +179,11 @@
 <#--
  * formHiddenInput
  *
- * Generate a form input field of type 'hidden' and bind it to an attribute
+ * Generate a form input field of type 'hidden' and message it to an attribute
  * of a command or bean. This functionality can also be obtained by calling
  * the formInput macro with a 'type' parameter of 'hidden'.
  *
- * @param path the name of the field to bind to
+ * @param path the name of the field to message to
  * @param attributes any additional attributes for the element (such as class
  *    or CSS styles or size
  -->
@@ -194,9 +194,9 @@
 <#--
  * formTextarea
  *
- * Display a text area and bind it to an attribute of a command or bean.
+ * Display a text area and message it to an attribute of a command or bean.
  *
- * @param path the name of the field to bind to
+ * @param path the name of the field to message to
  * @param attributes any additional attributes for the element (such as class
  *    or CSS styles or size
  -->
@@ -211,7 +211,7 @@
  * Show a selectbox (dropdown) input element allowing a single value to be chosen
  * from a list of options.
  *
- * @param path the name of the field to bind to
+ * @param path the name of the field to message to
  * @param options a map (value=label) of all the available options
  * @param attributes any additional attributes for the element (such as class
  *    or CSS styles or size
@@ -237,7 +237,7 @@
  * Show a listbox of options allowing the user to make 0 or more choices from
  * the list of options.
  *
- * @param path the name of the field to bind to
+ * @param path the name of the field to message to
  * @param options a map (value=label) of all the available options
  * @param attributes any additional attributes for the element (such as class
  *    or CSS styles or size
@@ -257,7 +257,7 @@
  *
  * Show radio buttons.
  *
- * @param path the name of the field to bind to
+ * @param path the name of the field to message to
  * @param options a map (value=label) of all the available options
  * @param separator the html tag or other character list that should be used to
  *    separate each option. Typically '&nbsp;' or '<br>'
@@ -278,7 +278,7 @@
  *
  * Show checkboxes.
  *
- * @param path the name of the field to bind to
+ * @param path the name of the field to message to
  * @param options a map (value=label) of all the available options
  * @param separator the html tag or other character list that should be used to
  *    separate each option. Typically '&nbsp;' or '<br>'
@@ -301,7 +301,7 @@
  *
  * Show a single checkbox.
  *
- * @param path the name of the field to bind to
+ * @param path the name of the field to message to
  * @param attributes any additional attributes for the element (such as class
  *    or CSS styles or size
 -->

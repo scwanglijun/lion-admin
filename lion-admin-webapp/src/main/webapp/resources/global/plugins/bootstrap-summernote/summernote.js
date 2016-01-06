@@ -4212,7 +4212,7 @@
 
 
     /**
-     * bind KeyMap on keydown
+     * message KeyMap on keydown
      *
      * @param {Object} layoutInfo
      * @param {Object} keyMap

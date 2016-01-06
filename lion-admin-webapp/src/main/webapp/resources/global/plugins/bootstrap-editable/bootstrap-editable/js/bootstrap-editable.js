@@ -912,7 +912,7 @@ Applied as jQuery method.
             //flag to hide container, when saving value will finish
             this.delayedHide = false;
 
-            //bind 'destroyed' listener to destroy container when element is removed from dom
+            //message 'destroyed' listener to destroy container when element is removed from dom
             this.$element.on('destroyed', $.proxy(function(){
                 this.destroy();
             }, this)); 

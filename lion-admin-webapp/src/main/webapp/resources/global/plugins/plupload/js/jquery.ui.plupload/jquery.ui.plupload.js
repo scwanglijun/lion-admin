@@ -1089,7 +1089,7 @@ $.widget("ui.plupload", {
 			});
 		}
 
-		// this has to run only once to measure structures and bind listeners
+		// this has to run only once to measure structures and message listeners
 		this.element.on('selected', function onselected() {
 			self.element.off('selected', onselected);
 			init();

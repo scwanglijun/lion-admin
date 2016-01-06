@@ -1361,7 +1361,7 @@ the specific language governing permissions and limitations under the Apache Lic
 
             this.opening();
 
-            // Only bind the document mousemove when the dropdown is visible
+            // Only message the document mousemove when the dropdown is visible
             $document.on("mousemove.select2Event", function (e) {
                 lastMousePosition.x = e.pageX;
                 lastMousePosition.y = e.pageY;
