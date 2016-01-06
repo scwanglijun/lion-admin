@@ -31,14 +31,23 @@
 									<th>名称</th>
 									<th>总的缓存数</th>
 									<th>缓存状态</th>
+									<th>操作</th>
 								</tr>
 								</thead>
 								<tbody>
-								<tr>
-									<th>${managerModel.name!}</th>									
-									<th>${managerModel.size!}</th>
-									<td>${managerModel.statusName!}</td>
-								</tr>								 
+								<#list managerModels as item>
+									<tr>
+										<th>${item.name!}</th>
+										<th>${item.size!}</th>
+										<td>${item.statusName!}</td>
+										<td>
+											<a id="btnDelete" class="btn btn-sm red">
+                                            <i class="fa fa-times"></i>
+										 		清除
+                                        	</a>
+										</td>
+									</tr>
+								</#list>
 								</table>
 							</div>
 						</div>
@@ -69,21 +78,30 @@
 									<th>内存命中次数</th>
 									<th>磁盘命中次数</th>
 									<th>缓存策略</th>
+									<th>操作</th>
 								</tr>
 								</thead>
 								<tbody>
-								<#list managerModel.cacheModels as item>
-									<tr>
-										<td>${item.name!}</td>
-										<th>${item.size}</th>
-										<td>${item.memoryStoreSize}</td>
-										<td>${item.diskStoreSize}</td>
-										<td>${item.cacheHits}</td>
-										<td>${item.inMemoryHits}</td>
-										<td>${item.memoryStoreEvictionPolicy}</td>
-									</tr>
-									</tr>
-								 </#list>				 
+								<#list managerModels as managerModel>
+										<#list managerModel.cacheModels as item>
+											<tr>
+												<td>${item.name!}</td>
+												<th>${item.size}</th>
+												<td>${item.memoryStoreSize}</td>
+												<td>${item.diskStoreSize}</td>
+												<td>${item.cacheHits}</td>
+												<td>${item.inMemoryHits}</td>
+												<td>${item.memoryStoreEvictionPolicy}</td>
+                                                <td>
+                                                    <a id="btnDelete" class="btn btn-sm red">
+                                                        <i class="fa fa-times"></i>
+                                                        清除
+                                                    </a>
+                                                </td>
+											</tr>
+											</tr>
+									 </#list>
+								</#list>
 								</tbody>
 								</table>
 							</div>
