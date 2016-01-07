@@ -119,5 +119,6 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.4.4" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.4.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-hibernate4:2.4.4" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:19.0-rc2" level="project" />
   </component>
 </module>

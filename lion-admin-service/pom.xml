@@ -60,6 +60,10 @@
 			<artifactId>jackson-datatype-hibernate4</artifactId>
 		</dependency>
 		<!-- JSON End -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+		</dependency>
 	</dependencies>
 	<groupId>com.newtouch.lion</groupId>
 </project>
