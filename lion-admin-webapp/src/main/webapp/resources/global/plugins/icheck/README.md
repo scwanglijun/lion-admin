@@ -3,7 +3,7 @@
 
 Refer to the [iCheck website](http://fronteed.com/iCheck/) for examples.
 
-**Note: [iCheck v2.0](https://github.com/fronteed/iCheck/tree/2.x-beta) is on the way**, it got a huge performance boost, many new options and methods. It's in a release candidate state, so you may try to use it. Feel free to submit an issue if you find something not working.
+**Note: [iCheck v2.0](https://github.com/fronteed/iCheck/tree/2.x-beta) is on the way**, it got a huge performance boost, many new options and methods. It's in a release candidate treeState, so you may try to use it. Feel free to submit an issue if you find something not working.
 
 ![Skins](http://fronteed.com/iCheck/examples.png)
 
@@ -87,55 +87,55 @@ These options are default:
   // base class added to customized radio buttons
   radioClass: 'iradio',
 
-  // class added on checked state (input.checked = true)
+  // class added on checked treeState (input.checked = true)
   checkedClass: 'checked',
 
     // if not empty, used instead of 'checkedClass' option (input type specific)
     checkedCheckboxClass: '',
     checkedRadioClass: '',
 
-  // if not empty, added as class name on unchecked state (input.checked = false)
+  // if not empty, added as class name on unchecked treeState (input.checked = false)
   uncheckedClass: '',
 
     // if not empty, used instead of 'uncheckedClass' option (input type specific)
     uncheckedCheckboxClass: '',
     uncheckedRadioClass: '',
 
-  // class added on disabled state (input.disabled = true)
+  // class added on disabled treeState (input.disabled = true)
   disabledClass: 'disabled',
 
     // if not empty, used instead of 'disabledClass' option (input type specific)
     disabledCheckboxClass: '',
     disabledRadioClass: '',
 
-  // if not empty, added as class name on enabled state (input.disabled = false)
+  // if not empty, added as class name on enabled treeState (input.disabled = false)
   enabledClass: '',
 
     // if not empty, used instead of 'enabledClass' option (input type specific)
     enabledCheckboxClass: '',
     enabledRadioClass: '',
 
-  // class added on indeterminate state (input.indeterminate = true)
+  // class added on indeterminate treeState (input.indeterminate = true)
   indeterminateClass: 'indeterminate',
 
     // if not empty, used instead of 'indeterminateClass' option (input type specific)
     indeterminateCheckboxClass: '',
     indeterminateRadioClass: '',
 
-  // if not empty, added as class name on determinate state (input.indeterminate = false)
+  // if not empty, added as class name on determinate treeState (input.indeterminate = false)
   determinateClass: '',
 
     // if not empty, used instead of 'determinateClass' option (input type specific)
     determinateCheckboxClass: '',
     determinateRadioClass: '',
 
-  // class added on hover state (pointer is moved onto input)
+  // class added on hover treeState (pointer is moved onto input)
   hoverClass: 'hover',
 
-  // class added on focus state (input has gained focus)
+  // class added on focus treeState (input has gained focus)
   focusClass: 'focus',
 
-  // class added on active state (mouse button is pressed on input)
+  // class added on active treeState (mouse button is pressed on input)
   activeClass: 'active',
 
   // adds hoverClass to customized input on label hover and labelHoverClass to label on input hover
@@ -207,7 +207,7 @@ $('input.some').iCheck({
 Indeterminate
 ---------
 
-HTML5 allows specifying [indeterminate](http://css-tricks.com/indeterminate-checkboxes/) ("partially" checked) state for checkboxes. iCheck supports this for both checkboxes and radio buttons.
+HTML5 allows specifying [indeterminate](http://css-tricks.com/indeterminate-checkboxes/) ("partially" checked) treeState for checkboxes. iCheck supports this for both checkboxes and radio buttons.
 
 You can make an input indeterminate through HTML using additional attributes (supported by iCheck). Both do the same job, but `indeterminate="true"` may not work in some browsers (like IE7):
 
@@ -221,7 +221,7 @@ determinate="false"
 <input type="radio" determinate="false">
 ```
 
-`indeterminate` and `determinate` [methods](#methods) can be used to toggle indeterminate state.
+`indeterminate` and `determinate` [methods](#methods) can be used to toggle indeterminate treeState.
 
 Callbacks
 ---------
@@ -242,35 +242,35 @@ iCheck provides plenty callbacks, which may be used to handle changes.
     </tr>
     <tr>
       <td>ifChanged</td>
-      <td>input's "checked", "disabled" or "indeterminate" state is changed</td>
+      <td>input's "checked", "disabled" or "indeterminate" treeState is changed</td>
     </tr>
     <tr>
       <td>ifChecked</td>
-      <td>input's state is changed to "checked"</td>
+      <td>input's treeState is changed to "checked"</td>
     </tr>
     <tr>
       <td>ifUnchecked</td>
-      <td>"checked" state is removed</td>
+      <td>"checked" treeState is removed</td>
     </tr>
     <tr>
       <td>ifToggled</td>
-      <td>input's "checked" state is changed</td>
+      <td>input's "checked" treeState is changed</td>
     </tr>
     <tr>
       <td>ifDisabled</td>
-      <td>input's state is changed to "disabled"</td>
+      <td>input's treeState is changed to "disabled"</td>
     </tr>
     <tr>
       <td>ifEnabled</td>
-      <td>"disabled" state is removed</td>
+      <td>"disabled" treeState is removed</td>
     </tr>
     <tr>
       <td>ifIndeterminate</td>
-      <td>input's state is changed to "indeterminate"</td>
+      <td>input's treeState is changed to "indeterminate"</td>
     </tr>
     <tr>
       <td>ifDeterminate</td>
-      <td>"indeterminate" state is removed</td>
+      <td>"indeterminate" treeState is removed</td>
     </tr>
     <tr>
       <td>ifCreated</td>
@@ -300,25 +300,25 @@ Methods
 These methods can be used to make changes programmatically (any selectors can be used):
 
 ```js
-// change input's state to 'checked'
+// change input's treeState to 'checked'
 $('input').iCheck('check');
 
-// remove 'checked' state
+// remove 'checked' treeState
 $('input').iCheck('uncheck');
 
-// toggle 'checked' state
+// toggle 'checked' treeState
 $('input').iCheck('toggle');
 
-// change input's state to 'disabled'
+// change input's treeState to 'disabled'
 $('input').iCheck('disable');
 
-// remove 'disabled' state
+// remove 'disabled' treeState
 $('input').iCheck('enable');
 
-// change input's state to 'indeterminate'
+// change input's treeState to 'indeterminate'
 $('input').iCheck('indeterminate');
 
-// remove 'indeterminate' state
+// remove 'indeterminate' treeState
 $('input').iCheck('determinate');
 
 // apply input changes, which were done outside the plugin
@@ -380,7 +380,7 @@ Changelog
 * Pointer events support - full support for phones and tablets that use Windows OS (such as Lumia, HP tablets, desktops with a touch screen, etc)
 * WebOS and Firefox OS support
 * New methods: `$(input).icheck('data')` to get all the options were used for customization (also stores a current states values - `checked`, `disabled` and `indeterminate`), `$('input').icheck('styler')` to get a wrapper div (that's used for customization)
-* Better handling of the `indeterminate` state
+* Better handling of the `indeterminate` treeState
 * Ability to set callbacks in three ways: global object, direct JavaScript object or using bind method (`$(input).on(callback)`)
 * Ability to switch off some of the callbacks when you don't need them (global or per input)
 * Inline styles dropped - iCheck won't add any inline styles to the elements until it's highly needed (`cursor` or `area` option)
@@ -389,7 +389,7 @@ Changelog
 * Optimized event bindings - iCheck binds only a few global events for the all inputs (doesn't increase on elements addition), instead of a couple for the each customized element
 * Doesn't store tons of arbitrary data (event in jQuery or Zepto cache), defines customized elements by specific classnames 
 * Extra `ins` tag is dropped (less DOM modifications), iCheck wraps each input with a single `div` and doesn't use any extra markup for the any option
-* Optimized reflows and repaints on init and state changes 
+* Optimized reflows and repaints on init and treeState changes
 * Better options handling - iCheck will never run a single line of JS to process an options that are off or empty 
 * Ability to auto customize the ajax loaded inputs without using any extra code (`autoAjax` option, on by default)
 * Auto inits on domready using the specified selector (`autoInit` option) - searches for `.icheck` by default. Classnames can be changed using the `window.classes` object

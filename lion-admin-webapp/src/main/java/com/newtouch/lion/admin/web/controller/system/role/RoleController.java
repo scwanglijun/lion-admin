@@ -16,6 +16,7 @@ import java.util.Set;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
+import com.newtouch.lion.tree.State;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,7 +55,6 @@ import com.newtouch.lion.service.system.GroupService;
 import com.newtouch.lion.service.system.ResourceService;
 import com.newtouch.lion.service.system.RoleService;
 import com.newtouch.lion.service.system.UserService;
-import com.newtouch.lion.tree.State;
 import com.newtouch.lion.tree.TreeNode;
 import com.newtouch.lion.web.constant.ConstantMessage;
 import com.newtouch.lion.web.controller.AbstractController;

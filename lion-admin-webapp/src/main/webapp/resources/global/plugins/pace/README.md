@@ -5,7 +5,7 @@ An automatic web page progress bar.
 
 Include [pace.js](https://raw.github.com/HubSpot/pace/v0.4.14/pace.min.js) and a [theme](http://github.hubspot.com/pace/docs/welcome/) of your choice to your page and you are done!
 
-Pace will automatically monitor your Ajax requests, event loop lag, document ready state and elements on your page to decide on the progress.
+Pace will automatically monitor your Ajax requests, event loop lag, document ready treeState and elements on your page to decide on the progress.
 
 If you use AMD or Browserify, require pace.js and call `pace.start()` as early in the loading process as is possible.
 

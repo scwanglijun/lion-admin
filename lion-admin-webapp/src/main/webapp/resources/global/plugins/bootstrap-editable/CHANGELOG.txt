@@ -33,7 +33,7 @@ Version 1.4.5 Jun 23, 2013
 [enh #218] sourceCache now disables cache totally (vitalets)
 [bug #156] solve conflict of bootstrap datepicker and jQuery UI datepicker (vitalets)
 [enh] update bootstrap-datepicker to 1.1.2 (vitalets)
-[enh] allow follow links in disabled state (vitalets)
+[enh] allow follow links in disabled treeState (vitalets)
 [enh] update combodate to 1.0.4, fix #222 (vitalets)
 
 

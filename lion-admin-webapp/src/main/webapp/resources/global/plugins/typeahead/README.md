@@ -153,7 +153,7 @@ Grunt tasks that'll be useful in development.
 <!-- section links -->
 
 [contributing guidelines]: https://github.com/twitter/typeahead.js/blob/master/CONTRIBUTING.md
-[entry-level]: https://github.com/twitter/typeahead.js/issues?&labels=entry-level&state=open
+[entry-level]: https://github.com/twitter/typeahead.js/issues?&labels=entry-level&treeState=open
 [grunt-cli]: https://github.com/gruntjs/grunt-cli
 
 Maintainers

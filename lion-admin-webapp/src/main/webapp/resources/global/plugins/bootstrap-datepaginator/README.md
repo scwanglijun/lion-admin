@@ -179,7 +179,7 @@ By default the paginator will automatically fill the entire width of it's contai
 
 ### setSelectedDate
 
-Sets the selected date, triggering a refresh to reflect the new state.
+Sets the selected date, triggering a refresh to reflect the new treeState.
 
 	$('#paginator').datepaginator('setSelectedDate', ['2013-10-05', 'YYYY-MM-DD']);
 

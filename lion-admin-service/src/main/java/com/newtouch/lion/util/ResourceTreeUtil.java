@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import com.newtouch.lion.tree.State;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,11 +21,10 @@ import com.newtouch.lion.common.codelist.CodeListConstant;
 import com.newtouch.lion.comparator.ResourceComparator;
 import com.newtouch.lion.model.system.Attributes;
 import com.newtouch.lion.model.system.Resource;
-import com.newtouch.lion.tree.State;
 import com.newtouch.lion.tree.TreeNode;
 
 
- 
+
 
 
 
@@ -114,7 +114,7 @@ public class ResourceTreeUtil {
 				String text=resource.getNameZh();
 				int  orderId=resource.getSeqNum();
 				boolean isLeaf=false;			 
-				TreeNode  treeNode=new TreeNode(id,text,State.open,checked,"",orderId,isLeaf,attributes.getPath(),attributes,childrenNext);
+				TreeNode  treeNode=new TreeNode(id,text, State.open,checked,"",orderId,isLeaf,attributes.getPath(),attributes,childrenNext);
 				children.add(treeNode);
 		
 		}
@@ -169,11 +169,11 @@ public class ResourceTreeUtil {
 				 
 				if(containsKey(resource.getType())&&resource.getResources().size()>0){
 					boolean isLeaf=false;			 
-					TreeNode  treeNode=new TreeNode(id,text,State.open,checked,"",orderId,isLeaf,attributes.getPath(),attributes,childrenNext);
+					TreeNode  treeNode=new TreeNode(id,text, State.open,checked,"",orderId,isLeaf,attributes.getPath(),attributes,childrenNext);
 					children.add(treeNode);
 				}else if(resource.getType().equals(CodeListConstant.RESTYPE_MODULE_CATEGORY_ITEM)){
 					boolean isLeaf=false;			 
-					TreeNode  treeNode=new TreeNode(id,text,State.open,checked,"",orderId,isLeaf,attributes.getPath(),attributes,childrenNext);
+					TreeNode  treeNode=new TreeNode(id,text, State.open,checked,"",orderId,isLeaf,attributes.getPath(),attributes,childrenNext);
 					children.add(treeNode);
 				}
 						

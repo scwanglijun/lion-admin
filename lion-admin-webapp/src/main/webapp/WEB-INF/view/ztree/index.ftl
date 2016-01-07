@@ -39,7 +39,6 @@
 					</div>
 				</div>				 
 			</div>
-			
 			<div class="col-md-12 margin-bottom-10" style="display:none">
 				<ul id="treeDemo" class="ztree"></ul> 
 			</div>

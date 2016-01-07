@@ -39,8 +39,6 @@ $(function () {
               v += nodes[i].name + ",";
           }
           if (v.length > 0 ) v = v.substring(0, v.length-1);
-          console.dir(treeId);
-          console.dir(treeNode);
    }
   //默认隐藏第一个tab的modal-footer
     modalRoleAuth.find('.modal-footer').hide();

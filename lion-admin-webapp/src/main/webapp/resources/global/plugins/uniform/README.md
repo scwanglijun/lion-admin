@@ -320,7 +320,7 @@ If you don't mind updating all Uniformed elements or just don’t specifically k
 
 ### $.uniform.restore([elem/selector string]);
 
-If you want to "un-uniform" something, simply call this function. It will remove the inline styles, extra dom elements, and event handlers, effectively restoring the element to it's previous state.
+If you want to "un-uniform" something, simply call this function. It will remove the inline styles, extra dom elements, and event handlers, effectively restoring the element to it's previous treeState.
 
     $.uniform.restore("select");
 

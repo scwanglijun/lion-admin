@@ -70,7 +70,7 @@ Set the inital height of the modal.
 Set the max-height of the modal-body.
 
 + **loading**
-Toggle the loading state.
+Toggle the loading treeState.
 
 + **spinner**
 Provide a custom image or animation for the loading spinner.
@@ -99,7 +99,7 @@ Set the modal's manager. By default this is set to the `GlobalModalManager` and 
 **ModalManager**
 
 + **loading**
-Toggle the loading state.
+Toggle the loading treeState.
 
 + **backdropLimit**
 Limit the amount of backdrops that will appear on the page at the same time.

@@ -6,7 +6,7 @@ Key features include:
 
 * Speed! The aim of Scroller for DataTables is to make rendering large data sets fast
 * Full compatibility with DataTables' deferred rendering for maximum speed
-* Integration with state saving in DataTables (scrolling position is saved)
+* Integration with treeState saving in DataTables (scrolling position is saved)
 * Support for scrolling with millions of rows
 * Easy to use
 
