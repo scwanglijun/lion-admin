@@ -559,7 +559,7 @@
         };
 
         this.listen = function () {
-            // bind MouseWheel
+            // message MouseWheel
             var s = this, mwTimerStop, mwTimerRelease,
                 mw = function (e) {
                     e.preventDefault();
@@ -652,8 +652,8 @@
                     }
                 );
 
-            //this.$c.bind("mousewheel DOMMouseScroll", mw);
-            //this.$.bind("mousewheel DOMMouseScroll", mw)
+            //this.$c.message("mousewheel DOMMouseScroll", mw);
+            //this.$.message("mousewheel DOMMouseScroll", mw)
         };
 
         this.init = function () {

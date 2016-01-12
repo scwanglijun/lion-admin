@@ -251,7 +251,7 @@
 		},
 		
 		/**
-		* Perform actions based on the type of bind (mouseenter, mouseleave) 
+		* Perform actions based on the type of message (mouseenter, mouseleave)
 		* @private
 		* @param {Object} e The jQuery element
 		* @param {String} type The type of action we're performing: mouseenter or mouseleave

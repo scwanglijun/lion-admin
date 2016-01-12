@@ -50,7 +50,7 @@ Enjoy!
 	}
 
 	/**
-	 * For backwards compatibility with older jQuery libraries, only bind
+	 * For backwards compatibility with older jQuery libraries, only message
 	 * one thing at a time.  Also, this function adds our namespace to
 	 * events in one consistent location, shrinking the minified code.
 	 *
@@ -60,7 +60,7 @@ Enjoy!
 	 *
 	 * @param jQuery $el
 	 * @param Object options Uniform options for this element
-	 * @param Object events Events to bind, properties are event names
+	 * @param Object events Events to message, properties are event names
 	 */
 	function bindMany($el, options, events) {
 		var name, namespaced;

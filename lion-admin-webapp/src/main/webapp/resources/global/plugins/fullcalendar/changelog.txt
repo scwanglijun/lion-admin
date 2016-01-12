@@ -482,7 +482,7 @@ v1.4.5 (2010-02-21)
 -------------------
 
 - lazyFetching option, which can force the calendar to fetch events on every view/date change
-- scroll state of agenda views are preserved when switching back to view
+- scroll treeState of agenda views are preserved when switching back to view
 - bugfixes
 	- calling methods on an uninitialized fullcalendar throws error
 	- IE6/7 bug where an entire view becomes invisible ([320])
@@ -565,7 +565,7 @@ v1.4 (2009-10-19)
 	- eventDrop now has an an allDay parameter
 	  (this will affect those who use revertFunc, adjust parameter list)
 - added 'prevYear' and 'nextYear' for buttons in header
-- minor change for theme users, ui-state-hover not applied to active/inactive buttons
+- minor change for theme users, ui-treeState-hover not applied to active/inactive buttons
 - added event-color-changing example in docs
 - better defaults for right-to-left themed button icons
 

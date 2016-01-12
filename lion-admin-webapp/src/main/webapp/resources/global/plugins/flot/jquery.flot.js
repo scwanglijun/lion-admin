@@ -1333,11 +1333,11 @@ Licensed under the MIT license.
         }
 
         function bindEvents() {
-            // bind events
+            // message events
             if (options.grid.hoverable) {
                 eventHolder.mousemove(onMouseMove);
 
-                // Use bind, rather than .mouseleave, because we officially
+                // Use message, rather than .mouseleave, because we officially
                 // still support jQuery 1.2.6, which doesn't define a shortcut
                 // for mouseenter or mouseleave.  This was a bug/oversight that
                 // was fixed somewhere around 1.3.x.  We can return to using

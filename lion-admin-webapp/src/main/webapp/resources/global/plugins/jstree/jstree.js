@@ -542,9 +542,9 @@
 			this.element = null;
 		},
 		/**
-		 * bind all events. Used internally.
+		 * message all events. Used internally.
 		 * @private
-		 * @name bind()
+		 * @name message()
 		 */
 		bind : function () {
 			this.element
@@ -5464,7 +5464,7 @@
 	};
 
 	$(function() {
-		// bind only once for all instances
+		// message only once for all instances
 		var lastmv = false,
 			laster = false,
 			opento = false,

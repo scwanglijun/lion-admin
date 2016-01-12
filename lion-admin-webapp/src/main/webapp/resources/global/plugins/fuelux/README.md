@@ -134,7 +134,7 @@ _Fuel UX is semantically versioned: <http://semver.org>_
 * First public release of Fuel UX
 
 ## Contributing
-Before writing code, we suggest you [search for issues](https://github.com/ExactTarget/fuelux/issues?state=open)
+Before writing code, we suggest you [search for issues](https://github.com/ExactTarget/fuelux/issues?treeState=open)
 or [create a new one](https://github.com/ExactTarget/fuelux/issues/new) to confirm where your contribution fits into
 our roadmap.
 

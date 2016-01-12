@@ -54,7 +54,7 @@
 		<attributes>
 			<id name="id">
 				<column name="BAS_POSITION_ID" unique="true" nullable="false"
-					precision="11" scale="0" />
+						precision="11" scale="0" />
 				<generated-value strategy="IDENTITY" />
 			</id>
 			<basic name="nameZh">
@@ -66,19 +66,31 @@
 			<basic name="description">
 				<column name="DESCRIPTION" length="256" nullable="true" />
 			</basic>
+
+			<basic name="departmentId">
+				<column name="BAS_DEPARTMENT_ID" length="11" nullable="true" />
+			</basic>
+
+			<many-to-one name="department" fetch="LAZY">
+				<join-column name="BAS_DEPARTMENT_ID" insertable="false"
+							 updatable="false" />
+			</many-to-one>
+
 			<!--  <many-to-one name="department" fetch="LAZY">
 				<join-column name="BAS_DEPARTMENT_ID" insertable="true"
 					updatable="true" nullable="false" />
 			</many-to-one>-->
 			<many-to-one name="position" fetch="LAZY">
 				<join-column name="PARENT_BAS_POSITION_ID" insertable="true"
-					updatable="true" />
+							 updatable="true" />
 			</many-to-one>
 			<one-to-many name="positions" fetch="LAZY" mapped-by="position">
 				<cascade>
 					<cascade-merge />
 				</cascade>
 			</one-to-many>
+
+
 			<!-- <one-to-many name="users" fetch="LAZY" mapped-by="position">
 				<cascade>
 					<cascade-merge />

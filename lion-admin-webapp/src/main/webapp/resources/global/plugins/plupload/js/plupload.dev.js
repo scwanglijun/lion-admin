@@ -2055,7 +2055,7 @@ plupload.Uploader = function(options) {
 		/**
 		 * Adds an event listener by name.
 		 *
-		 * @method bind
+		 * @method message
 		 * @param {String} name Event name to listen for.
 		 * @param {function} func Function to call ones the event gets fired.
 		 * @param {Object} scope Optional scope to execute the specified function in.

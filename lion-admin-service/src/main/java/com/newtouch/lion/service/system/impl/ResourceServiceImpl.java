@@ -9,6 +9,7 @@ package com.newtouch.lion.service.system.impl;
 import com.newtouch.lion.common.Assert;
 import com.newtouch.lion.common.codelist.CodeListConstant;
 import com.newtouch.lion.dao.system.ResourceDao;
+import com.newtouch.lion.event.PushMessageEvent;
 import com.newtouch.lion.json.JSONParser;
 import com.newtouch.lion.model.system.Resource;
 import com.newtouch.lion.model.system.Role;
@@ -50,6 +51,8 @@ public class ResourceServiceImpl extends AbstractService implements
 	
 	@Autowired
 	private DataColumnService dataColumnService;
+	@Autowired
+	private PushMessageEvent pushMessageEvent;
 
 	/*
 	 * (non-Javadoc)
@@ -63,10 +66,11 @@ public class ResourceServiceImpl extends AbstractService implements
 		if(resource.getParentResourceId()!=null&&resource.getType().equals(CodeListConstant.RESTYPE_MODULE_CATEGORY_ITEM)){
 			Resource  parentResource=this.doFindById(resource.getParentResourceId());
 			parentResource.setIsLeaf(Boolean.FALSE);
-			parentResource.setType(CodeListConstant.RESTYPE_MODULE_MENU_CATEGORY);
-			resource.setResource(parentResource);
-		}
+		parentResource.setType(CodeListConstant.RESTYPE_MODULE_MENU_CATEGORY);
+		resource.setResource(parentResource);
+	}
 		resourceDao.save(resource);
+		pushMessageEvent.pushResource(resource);
 	}
 
 	/*
@@ -195,11 +199,12 @@ public class ResourceServiceImpl extends AbstractService implements
 	}
 
 	/* (non-Javadoc)
-	 * @see com.newtouch.lion.service.system.ResourceService#doUpdate(com.lion.framework.model.system.Resource)
+	 * @see com.newtouch.lion.service.system.ResourceService#doUpdate(com.newtouch.lion.model.system.Resource)
 	 */
 	@Override
 	public Resource doUpdate(Resource resource) {
 		this.resourceDao.update(resource);
+		pushMessageEvent.pushResource(resource);
 		return resource;
 	}
 

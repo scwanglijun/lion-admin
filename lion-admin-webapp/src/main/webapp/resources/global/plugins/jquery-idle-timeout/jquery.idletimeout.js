@@ -45,7 +45,7 @@
 				}
 			});
 			
-			// bind continue link
+			// message continue link
 			this.resume.bind("click", function(e){
 				e.preventDefault();
 				

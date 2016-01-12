@@ -100,7 +100,7 @@ $('input[name="daterange"]').daterangepicker(
 
 ## Functions
 
-Several functions are provided for updating the picker's option and state after initialization:
+Several functions are provided for updating the picker's option and treeState after initialization:
 
 `setOptions(object, function)`: This function has the same signature and purpose as the date range picker's constructor: it sets the picker's options to their defaults, overrides them with any values in an options object you provide, and sets the callback for selection changes to whatever function you provide
 

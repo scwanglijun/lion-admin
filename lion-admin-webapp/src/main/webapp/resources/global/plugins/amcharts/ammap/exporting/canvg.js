@@ -2662,7 +2662,7 @@
 				return p;
 			}
 			
-			// bind mouse
+			// message mouse
 			if (svg.opts['ignoreMouse'] != true) {
 				ctx.canvas.onclick = function(e) {
 					var p = mapXY(new svg.Point(e != null ? e.clientX : event.clientX, e != null ? e.clientY : event.clientY));

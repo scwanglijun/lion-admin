@@ -861,7 +861,7 @@
 			    // checks for IE and Chromium versions
 			    if (window.addEventListener) {
 
-			        // bind focus event
+			        // message focus event
 			        window.addEventListener("focus", function (event) {
 						if (container==undefined) return false;
 			            setTimeout(function(){
@@ -872,14 +872,14 @@
 
 			        }, false);
 
-			        // bind blur event
+			        // message blur event
 			        window.addEventListener("blur", function (event) {
 						// TAB IS NOT ACTIVE, WE CAN STOP ANY PART OF THE SLIDER
 			        }, false);
 
 			    } else {
 
-			        // bind focus event
+			        // message focus event
 			        window.attachEvent("focus", function (event) {
 
 			            setTimeout(function(){
@@ -891,7 +891,7 @@
 
 			        });
 
-			        // bind focus event
+			        // message focus event
 			        window.attachEvent("blur", function (event) {
 						// TAB IS NOT ACTIVE, WE CAN STOP ANY PART OF THE SLIDER
 			        });

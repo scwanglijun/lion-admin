@@ -592,7 +592,7 @@ lion.assemblyCache={};
 				_util.isFunction(callback)&&callback(_this.constant.error);
 			}
 
-			//event and callback bind
+			//event and callback message
 			if(fileref !== undefined){
 				charset&&fileref.setAttribute("charset",charset);
 				media&&fileref.setAttribute("media",media);

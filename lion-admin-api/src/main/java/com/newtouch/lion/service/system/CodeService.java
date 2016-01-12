@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.newtouch.lion.model.system.CodeList;
+import org.hibernate.annotations.Cache;
 import org.springframework.cache.annotation.Cacheable;
 
 /**
@@ -44,7 +45,7 @@ public interface CodeService {
 	 * @param codeTypeNameEn 参数类型英文名称
 	 * @return Map<String,String> key-codeValue Value-CodeList
 	 */
-
+	@Cacheable(value="codeCache",key="#codeTypeNameEn+'.doFindToMap'")
 	public Map<String,String> doFindToMap(String codeTypeNameEn);
 	/**
 	 * 据参数类型英文名称查找数据列表,返回List<

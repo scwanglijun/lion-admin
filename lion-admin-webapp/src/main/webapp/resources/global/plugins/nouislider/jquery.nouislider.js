@@ -18,7 +18,7 @@ $.fn.noUiSlider - WTFPL - refreshless.com/nouislider/ */
 	// Namespace for binding and unbinding slider events;
 	/** @const */
 	namespace = '.nui',
-	// Determine the events to bind. IE11 implements pointerEvents without
+	// Determine the events to message. IE11 implements pointerEvents without
 	// a prefix, which breaks compatibility with the IE10 implementation.
 	/** @const */
 	actions = window.navigator['pointerEnabled'] ? {

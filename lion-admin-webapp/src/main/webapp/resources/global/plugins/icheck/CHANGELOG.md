@@ -12,7 +12,7 @@
 * Pointer events support - full support for phones and tablets that use Windows OS (such as Lumia, HP tablets, desktops with a touch screen, etc)
 * WebOS and Firefox OS support
 * New methods: `$(input).icheck('data')` to get all the options were used for customization (also stores a current states values - `checked`, `disabled` and `indeterminate`), `$('input').icheck('styler')` to get a wrapper div (that's used for customization)
-* Better handling of the `indeterminate` state
+* Better handling of the `indeterminate` treeState
 * Ability to set callbacks in three ways: global object, direct JavaScript object or using bind method (`$(input).on(callback)`)
 * Ability to switch off some of the callbacks when you don't need them (global or per input)
 * Inline styles dropped - iCheck won't add any inline styles to the elements until it's highly needed (`cursor` or `area` option)
@@ -21,7 +21,7 @@
 * Optimized event bindings - iCheck binds only a few global events for the all inputs (doesn't increase on elements addition), instead of a couple for the each customized element
 * Doesn't store tons of arbitrary data (event in jQuery or Zepto cache), defines customized elements by specific classnames 
 * Extra `ins` tag is dropped (less DOM modifications), iCheck wraps each input with a single `div` and doesn't use any extra markup for the any option
-* Optimized reflows and repaints on init and state changes 
+* Optimized reflows and repaints on init and treeState changes
 * Better options handling - iCheck will never run a single line of JS to process an options that are off or empty 
 * Ability to auto customize the ajax loaded inputs without using any extra code (`autoAjax` option, on by default)
 * Auto inits on domready using the specified selector (`autoInit` option) - searches for `.icheck` by default. Classnames can be changed using the `window.classes` object

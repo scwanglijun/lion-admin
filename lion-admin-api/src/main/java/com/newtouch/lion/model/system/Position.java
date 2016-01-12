@@ -5,7 +5,7 @@
 *
 * $id: Position.java 9552 2014年12月24日 下午1:38:06 WangLijun$
 */
-package com.newtouch.lion.model.system; 
+package com.newtouch.lion.model.system;
 
 import com.newtouch.lion.model.VersionEntity;
 
@@ -22,7 +22,7 @@ import com.newtouch.lion.model.VersionEntity;
  * <p>
  * Company: Newtouch
  * </p>
- * 
+ *
  * @author WangLijun
  * @version 1.0
  */
@@ -48,7 +48,16 @@ public class Position extends VersionEntity<Long>{
 	private String description;
 	/**@Fields position： 父级岗位*/
 	private Position position;
-	
+
+	/**
+	 * @Fidlds departmentId:所在部门id
+	 * **/
+	private Long departmentId;
+
+	/****
+	 * @Fidlds department所在部门
+	 */
+	private Department department;
 	@Override
 	public Long getId() {
 		return this.id;
@@ -96,7 +105,7 @@ public class Position extends VersionEntity<Long>{
 		this.description = description;
 	}
 
-	
+
 	/**
 	 * @param id the id to set
 	 */
@@ -117,6 +126,36 @@ public class Position extends VersionEntity<Long>{
 	public void setPosition(Position position) {
 		this.position = position;
 	}
+
+	/**
+	 * @return the departmentId
+	 */
+	public Long getDepartmentId() {
+		return departmentId;
+	}
+
+	/**
+	 * @param departmentId the departmentId to set
+	 */
+	public void setDepartmentId(Long departmentId) {
+		this.departmentId = departmentId;
+	}
+
+	/**
+	 * @return the department
+	 */
+	public Department getDepartment() {
+		return department;
+	}
+
+	/**
+	 * @param department the department to set
+	 */
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
+
+
 }
 
 	
