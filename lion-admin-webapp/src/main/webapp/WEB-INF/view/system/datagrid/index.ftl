@@ -71,9 +71,9 @@
 						 <select  id="queryType"   name="type" 
 							placeholder="<@spring.message "sys.datacolumn.query.datagrid.missing.message"/>..."  
 							class="lion-combo form-control select2" 
-							data-valueField='codeValue'  
-							data-textField='nameZh'  
-							data-URL="${base}/system/code/combox.json?nameEn=datagrid_type">
+							data-valuefield='codeValue'
+							data-textfield='nameZh'
+							data-url="${base}/system/code/combox.json?nameEn=datagrid_type">
 						</select>
 					</div>
 					<div class="col-md-2">
@@ -91,7 +91,7 @@
 			<div class="col-md-12">
 			 	 <table class="lion-datagrids table table-striped table-bordered table-hover" 
 				  		 id="datagrid_dt" data-singleselect="true"
-				  		 data-loadUrl="${base}/system/datagrid/list.json" data-checkbox="true" data-pageSize="10">
+				  		 data-loadurl="${base}/system/datagrid/list.json" data-checkbox="true" data-pagesize="10">
 					<thead>
 						<tr>
 							<th class="table-checkbox" data-field="id" data-checkbox="true">
@@ -137,9 +137,9 @@
 													  <select  id="codeList"   name="type" 
 													 	placeholder="<@spring.message "sys.datacolumn.query.datagrid.missing.message"/>..."  
 													 	class="lion-combo form-control select2" 
-													 	data-valueField='codeValue'  
-													 	data-textField='nameZh'  
-													 	data-URL="${base}/system/code/combox.json?nameEn=datagrid_type">
+													 	data-valuefield='codeValue'
+													 	data-textfield='nameZh'
+													 	data-url="${base}/system/code/combox.json?nameEn=datagrid_type">
 													 </select>
 												</div>
 											</div>	

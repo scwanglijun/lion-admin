@@ -84,7 +84,7 @@
 
 			</div>
 			<div class="col-md-12">
-				<table class="lion-datagrids table table-striped table-bordered table-hover" id="sys_position_tb" data-singleselect="true",   data-loadUrl="${base}/system/position/list.json" data-checkbox="true" data-pageSize="10">
+				<table class="lion-datagrids table table-striped table-bordered table-hover" id="sys_position_tb" data-singleselect="true",   data-loadurl="${base}/system/position/list.json" data-checkbox="true" data-pagesize="10">
 					<thead>
 						<tr>
 							<th class="table-checkbox" data-field='id' data-checkbox="true">

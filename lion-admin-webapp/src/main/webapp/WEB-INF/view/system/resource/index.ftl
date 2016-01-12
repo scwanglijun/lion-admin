@@ -112,13 +112,13 @@
 														<div class="col-md-4">
 															<input  id="parentResourceId"  name="parentResourceId"  
 						 	  	  placeholder="请选择父级资源…"  type="text" 
-						 		  class="lion-combotree form-control"   data-loadURL="${base}/system/resource/combotree.json" data-width="230px" data-height="300px"/>		 
+						 		  class="lion-combotree form-control"   data-loadurl="${base}/system/resource/combotree.json" data-width="230px" data-height="300px"/>
 														</div>
 													</div>
 													<div class="form-filed">
 														<label class="col-md-2 control-label">资源类型</label>
 														<div class="col-md-4">
-															<select  id="sysresourcetype"  name="type" placeholder="请选择参数列表..."   class="lion-combo form-control select2  " data-valueField='codeValue'  data-textField='nameZh' data-URL="${base}/system/code/combox.htm?nameEn=ResourceType">
+															<select  id="sysresourcetype"  name="type" placeholder="请选择参数列表..."   class="lion-combo form-control select2  " data-valuefield='codeValue'  data-textfield='nameZh' data-url="${base}/system/code/combox.htm?nameEn=ResourceType">
 															</select>							 
 														</div>
 													</div>
@@ -206,7 +206,7 @@
 														
 														<div class="col-md-3">
 
-																<select  id="sys_resource_icon"  name="icon" placeholder="请选择资源图标..."   class="lion-combo form-control select2 "   data-valueField='iconClass'  data-textField='iconClass' data-URL="${base}/system/code/icon.json?iconType=RESOURCE_ICON">
+																<select  id="sys_resource_icon"  name="icon" placeholder="请选择资源图标..."   class="lion-combo form-control select2 "   data-valuefield='iconClass'  data-textfield='iconClass' data-url="${base}/system/code/icon.json?iconType=RESOURCE_ICON">
 																</select>
 														</div>
 														<label class="control-label"><span id="span_resource_icon"></span></label>
