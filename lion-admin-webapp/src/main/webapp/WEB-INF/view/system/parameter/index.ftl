@@ -76,7 +76,7 @@
 				  data-singleselect="true",   
 				  data-loadurl="${base}/system/parameter/list.json" 
 				  data-checkbox="true" 
-				  data-pageSize="10" width="100%">
+				  data-pagesize="10" width="100%">
 					<thead>
 						<tr>
 						  <th class="table-checkbox"  style="width:30px;" data-field='id' data-checkbox="true">

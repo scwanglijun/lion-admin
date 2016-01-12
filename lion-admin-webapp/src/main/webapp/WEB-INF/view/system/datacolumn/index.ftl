@@ -70,9 +70,9 @@ tfoot tr td{
 						<select  id="dataGridListType1"   name="type" 
 							placeholder="<@spring.message "sys.datacolumn.query.datagrid.type.missing.message"/>..."  
 							class="lion-combo form-control select2" 
-							data-valueField='codeValue'  
-							data-textField='nameZh' 
-							data-URL="${base}/system/code/combox.json?nameEn=datagrid_type">
+							data-valuefield='codeValue'
+							data-textfield='nameZh'
+							data-url="${base}/system/code/combox.json?nameEn=datagrid_type">
 						</select>	
 					</div>
 					<label class="control-label col-md-2" for="dataGridId" >
@@ -82,9 +82,9 @@ tfoot tr td{
 						<select  id="dataGridListType2"   name="dataGridId" 
 							placeholder="<@spring.message "sys.datacolumn.query.datagrid.missing.message"/>..."  
 							class="lion-combo form-control select2" 
-							data-valueField='id'  
-							data-textField='title' 
-							data-URL="${base}/system/datagrid/combox.json">
+							data-valuefield='id'
+							data-textfield='title'
+							data-url="${base}/system/datagrid/combox.json">
 						</select>	
 					</div>
 					<div class="col-md-1">
@@ -105,7 +105,7 @@ tfoot tr td{
 			<div class="col-md-12"> 
 				  <table class="lion-datagrids table table-striped table-bordered table-hover" 
 				  		 id="datacolumn_tb" data-singleselect="true"
-				  		 data-loadUrl="${base}/system/datacolumn/list.json" data-checkbox="true" data-pageSize="10">
+				  		 data-loadurl="${base}/system/datacolumn/list.json" data-checkbox="true" data-pagesize="10">
 					<thead>
 						<tr>
 							<th class="table-checkbox" data-field="id" data-checkbox="true">

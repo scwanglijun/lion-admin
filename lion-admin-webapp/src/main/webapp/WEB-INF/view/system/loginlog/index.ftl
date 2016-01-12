@@ -68,7 +68,7 @@
 			</div>
 			
 			<div class="col-md-12">
-				<table class="lion-datagrids table table-striped table-bordered table-hover" id="sys_login_log_list_tb" data-singleselect="true",   data-loadUrl="${base}/system/loginlog/list.json" data-checkbox="true" data-pageSize="10">
+				<table class="lion-datagrids table table-striped table-bordered table-hover" id="sys_login_log_list_tb" data-singleselect="true",   data-loadurl="${base}/system/loginlog/list.json" data-checkbox="true" data-pagesize="10">
 					<thead>
 						<tr>
 							<th data-field='username' data-sortDir="asc"    style="width:100px;">

@@ -57,8 +57,8 @@
 					</label>
 					<div class="col-md-3">
 						<select  id="iconTypeList" name="iconType"  placeholder="<@spring.message "sys.icon.form.class.missing.message"/>..."  
-						 	class="lion-combo form-control select2" data-valueField='codeValue' 
-						 	data-textField='nameZh' data-URL="${base}/system/code/combox.htm?nameEn=IconType">
+						 	class="lion-combo form-control select2" data-valuefield='codeValue'
+						 	data-textfield='nameZh' data-url="${base}/system/code/combox.htm?nameEn=IconType">
 						</select>
 					</div>
 					<div class="col-md-2">
@@ -89,7 +89,7 @@
 				</a>
 			</div>
 			<div class="col-md-12">
-				  <table class="lion-datagrids table table-striped table-bordered table-hover" id="sys_icon_tb" data-singleselect="true",   data-loadUrl="${base}/system/icon/list.json" data-checkbox="true" data-pageSize="10">
+				  <table class="lion-datagrids table table-striped table-bordered table-hover" id="sys_icon_tb" data-singleselect="true",   data-loadurl="${base}/system/icon/list.json" data-checkbox="true" data-pagesize="10">
 					<thead>
 						<tr>
 							<th class="table-checkbox" data-field='id' data-checkbox="true">
@@ -141,8 +141,8 @@
 									</label>
 									<div class="col-md-5">
 										 <select  id="iconType" name="iconType"  placeholder="<@spring.message "sys.icon.form.class.missing.message"/>..."  
-										 	class="lion-combo form-control select2" data-valueField='codeValue' 
-										 	data-textField='nameZh' data-URL="${base}/system/code/combox.htm?nameEn=IconType">
+										 	class="lion-combo form-control select2" data-valuefield='codeValue'
+										 	data-textfield='nameZh' data-url="${base}/system/code/combox.htm?nameEn=IconType">
 										</select>
 									</div>
 								</div>

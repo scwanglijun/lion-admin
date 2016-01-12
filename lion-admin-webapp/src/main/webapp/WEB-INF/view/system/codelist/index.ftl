@@ -56,7 +56,7 @@
 						<@spring.message "sys.codeList.query.type.text"/>
 					</label>
 					<div class="col-md-3">
-					  <select  id="CodeList"  name="codeTypeId" placeholder="<@spring.message "sys.codeList.query.type.missing.message"/>..."  class="lion-combo form-control select2  " data-valueField="id"  data-textField="nameZh" data-URL="${base}/system/code/typecombox.json"></select>
+					  <select  id="CodeList"  name="codeTypeId" placeholder="<@spring.message "sys.codeList.query.type.missing.message"/>..."  class="lion-combo form-control select2  " data-valuefield="id"  data-textfield="nameZh" data-url="${base}/system/code/typecombox.json"></select>
 					</div>
 					<div class="col-md-2">
 						<a href="javascript:void(0)" id="btnQuery" class="btn blue">
@@ -92,7 +92,7 @@
 				</a>
 			</div>
 			<div class="col-md-12">
-				<table class="lion-datagrids table table-striped table-bordered table-hover" id="sys_codelist_tb" data-singleselect="true",   data-loadUrl="${base}/system/codelist/list.json" data-checkbox="true" data-pageSize="10">
+				<table class="lion-datagrids table table-striped table-bordered table-hover" id="sys_codelist_tb" data-singleselect="true",   data-loadurl="${base}/system/codelist/list.json" data-checkbox="true" data-pagesize="10">
 					<thead>
 						<tr>
 							<th class="table-checkbox" style="width:30px;" data-field="id" data-checkbox="true">
@@ -145,7 +145,7 @@
 												<div class="form-group">
 													<label class="col-md-3 control-label"><@spring.message "sys.codeList.form.type.text"/></label>
 													<div class="col-md-5">										 
-														<select  id="addCodeTypeList"  name="codeTypeId" placeholder="<@spring.message "sys.codeList.query.type.missing.message"/>..."  class="lion-combo form-control select2  " data-valueField="id"  data-textField="nameZh" data-URL="${base}/system/code/typecombox.json"></select>
+														<select  id="addCodeTypeList"  name="codeTypeId" placeholder="<@spring.message "sys.codeList.query.type.missing.message"/>..."  class="lion-combo form-control select2  " data-valuefield="id"  data-textfield="nameZh" data-url="${base}/system/code/typecombox.json"></select>
 													</div>
 												</div>
 												<div class="form-group">

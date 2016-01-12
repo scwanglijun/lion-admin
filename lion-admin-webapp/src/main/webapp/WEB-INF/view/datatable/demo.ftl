@@ -76,7 +76,7 @@
 							  </div>
 						</div>
 						<div class="portlet-body">
-							<table class="lion-datagrids table table-striped table-bordered table-hover" id="sample_1" data-singleselect="true",   data-loadUrl="/admin/sys/dt/list.json" data-checkbox="true" data-pageSize="5">
+							<table class="lion-datagrids table table-striped table-bordered table-hover" id="sample_1" data-singleselect="true",   data-loadurl="/admin/sys/dt/list.json" data-checkbox="true" data-pagesize="5">
 								<thead>
 									<tr>
 										<th class="table-checkbox" data-field='id' data-checkbox="true">
@@ -104,7 +104,7 @@
 
 
 						<div class="portlet-body">
-							<table class="lion-datagrids table table-striped table-bordered table-hover" id="sample_2" data-singleselect="false", data-scrollX="true" data-scrollY="100px" data-loadUrl="/admin/sys/dt/list.json" data-scrollCollapse="true" data-jQueryUI="true" data-checkbox="true" data-pageSize="5" data-paginate="true" >
+							<table class="lion-datagrids table table-striped table-bordered table-hover" id="sample_2" data-singleselect="false", data-scrollx="true" data-scrolly="100px" data-loadurl="/admin/sys/dt/list.json" data-scrollCollapse="true" data-jqueryui="true" data-checkbox="true" data-pagesize="5" data-paginate="true" >
 								<thead>
 									<tr>
 										<th class="table-checkbox" data-field='id' data-checkbox="true">
