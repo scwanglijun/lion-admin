@@ -22,7 +22,7 @@
 			<div class="col-md-12 margin-bottom-20">
 			      <input  id="departmentId"  name="departmentId"  
 				 	  	  placeholder="请选择部门…"  type="text" 
-				 		  class="lion-combotree form-control input-small" value="1" data-loadURL="${base}/system/department/comboxtree.json" data-width="200px" data-height="300px">
+				 		  class="lion-combotree form-control input-small" value="1" data-loadurl="${base}/system/department/comboxtree.json" data-width="200px" data-height="300px">
 				 </select>
 			</div>
 			<div class="col-md-12 margin-bottom-10 margin-top-20">
