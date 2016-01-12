@@ -66,7 +66,7 @@
 			</div>-->
 			<div class="col-md-12">
 				  <!---<@lion.datagrids name="sys_parameter_lists_tb" tableClass="easyui-datagrid" toolbar=""  load="true" url="${base}/system/parameter/list.json" dataOptions="" style="height:400px;"/>-->
-				  <table class="lion-datagrids table table-striped table-bordered table-hover" id="sys_session_tb" data-singleselect="true" data-sort="false" data-loadUrl="${base}/sessions/actives.json" data-checkbox="true"  data-paginate="false" width="100%">
+				  <table class="lion-datagrids table table-striped table-bordered table-hover" id="sys_session_tb" data-singleselect="true" data-sort="false" data-loadurl="${base}/sessions/actives.json" data-checkbox="true"  data-paginate="false" width="100%">
 					<thead>
 						<tr>
 						  <th class="table-checkbox" data-field='id'style="width:30px;"  data-checkbox="true">
