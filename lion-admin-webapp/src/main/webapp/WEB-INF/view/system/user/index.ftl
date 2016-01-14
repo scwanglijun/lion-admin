@@ -465,7 +465,7 @@
 														<div class="input-group">
 															 <input  id="departmentId"  name="departmentId"  
 					 	  	  placeholder="请选择部门…"  type="text" 
-					 		  class="lion-combotree form-control"   data-loadURL="${base}/system/department/comboxtree.json" data-width="200px" data-height="300px"/>
+					 		  class="lion-combotree form-control"   data-loadurl="${base}/system/department/comboxtree.json" data-width="200px" data-height="300px"/>
 														</div>
 													</div>
 												</div>												

@@ -150,7 +150,7 @@
 														<@spring.message "sys.codeType.form.type.text"/>
 													</label>
 													<div class="col-md-5">										 
-															 <select  id="codeTypeList"  name="type" placeholder="<@spring.message "sys.codeType.form.type.missing.message"/>..."  class="lion-combo form-control select2  " data-valueField='codeValue'  data-textField='nameZh' data-URL="${base}/system/code/combox.htm?nameEn=codeTypes">
+															 <select  id="codeTypeList"  name="type" placeholder="<@spring.message "sys.codeType.form.type.missing.message"/>..."  class="lion-combo form-control select2  " data-valuefield='codeValue'  data-textfield='nameZh' data-url="${base}/system/code/combox.htm?nameEn=codeTypes">
 															 </select>						 
 													</div>
 												</div>

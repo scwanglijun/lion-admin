@@ -156,7 +156,7 @@
 													<div class="form-filed">
 														<label class="col-md-2 control-label">Target</label>
 														<div class="col-md-4">														 
-																<select  id="sysresourcetarget"  name="target" placeholder="请选择参数列表..."   class="lion-combo form-control select2  " data-valueField='codeValue'  data-textField='nameZh' data-URL="${base}/system/code/combox.htm?nameEn=Target">
+																<select  id="sysresourcetarget"  name="target" placeholder="请选择参数列表..."   class="lion-combo form-control select2  " data-valuefield='codeValue'  data-textfield='nameZh' data-url="${base}/system/code/combox.htm?nameEn=Target">
 																</select>	
 															 
 														</div>
