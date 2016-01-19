@@ -110,6 +110,8 @@ function successAddFrm(result,args){
   });
 }
 
+
+
 //编辑成功的函数
 function successEditFrm(result,args){
   lion.web.parsedata({
