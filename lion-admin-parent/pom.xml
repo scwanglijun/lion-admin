@@ -3,7 +3,7 @@
     <parent>
         <groupId>com.newtouch.lion</groupId>
         <artifactId>com.newtouch.lion-parent</artifactId>
-        <version>1.5</version>
+        <version>1.61</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.newotuch.lion</groupId>
@@ -13,9 +13,9 @@
     <name>lion-admin-parent</name>
     <url>http://lion.newtouch.com</url>
     <properties>
-        <lion-webcore.version>1.5</lion-webcore.version>
-        <lion-monitor.version>1.5</lion-monitor.version>
-        <lion-cache.version>1.5</lion-cache.version>
+        <lion-webcore.version>1.6</lion-webcore.version>
+        <lion-monitor.version>1.6</lion-monitor.version>
+        <lion-cache.version>1.6</lion-cache.version>
         <lion-admin-api.version>1.1-SNAPSHOT</lion-admin-api.version>
         <lion-admin-dao.version>1.1-SNAPSHOT</lion-admin-dao.version>
         <lion-admin-service.version>1.1-SNAPSHOT</lion-admin-service.version>

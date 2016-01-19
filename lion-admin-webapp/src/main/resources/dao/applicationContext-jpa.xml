@@ -5,8 +5,9 @@
 
 	<!-- Hibernate Common Configuraction -->
 	<bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
-	
+	<!--  
 	<bean  id="dynamicsPersistenceExceptionTranslationPostProcessor" class="com.newtouch.lion.datasource.DynamicsPersistenceExceptionTranslationPostProcessor" />
+	-->
 	<!-- 指定JPA持久化提供商，此处使用Hibernate实现HibernatePersistence类 -->
 	<bean id="persistenceProvider" class="org.hibernate.ejb.HibernatePersistence" />
 	<!-- 如果指定jpaVendorAdapter此属性可选，此处为HibernateJpaDialect -->
