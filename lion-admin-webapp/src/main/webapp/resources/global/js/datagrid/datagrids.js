@@ -60,7 +60,7 @@
                     'sortDescending': ':'
                 },
                 'emptyTable': '无记录',
-                'info': '从 _START_ 到 _END_ / 共 _TOTAL_ 条数据<input type="text" placeholder="跳转至" style="width:50px;margin-left:10px;" id="goinput"/><input type="button" value="Go" id="go"/>',
+                'info': '从 _START_ 到 _END_ / 共 _TOTAL_ 条数据',
                 'infoEmpty': '无记录',
                 'infoFiltered': '(从 _MAX_ 条记录过滤)',
                 'lengthMenu': '每页显示 _MENU_ 条数据',

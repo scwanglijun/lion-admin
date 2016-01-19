@@ -86,7 +86,7 @@
 				</a>
 			</div>
 			<div class="col-md-12">
-				<table class="lion-datagrids table table-striped table-bordered table-hover" id="sys_rolelist_tb" data-singleselect="true",   data-loadUrl="${base}/system/role/list.json" data-checkbox="true" data-pageSize="10">
+				<table class="lion-datagrids table table-striped table-bordered table-hover" id="sys_rolelist_tb" data-singleselect="true",   data-loadurl="${base}/system/role/list.json" data-checkbox="true" data-pagesize="10">
 					<thead>
 						<tr>
 							<th class="table-checkbox" data-field='id' data-checkbox="true">
@@ -150,7 +150,7 @@
 								 
 										<div class="col-md-12">	
 												<i class="fa"></i><strong>已关联用户组</strong>
-												<table  id="rolegroup_list" class="lion-datagrids table table-striped table-bordered table-hover" data-singleselect="false",    data-loadUrl="${base}/system/role/authgroups.json"   data-checkbox="true" data-pageSize="3" cellspacing="0"   data-loading="false">
+												<table  id="rolegroup_list" class="lion-datagrids table table-striped table-bordered table-hover" data-singleselect="false",    data-loadurl="${base}/system/role/authgroups.json"   data-checkbox="true" data-pagesize="3" cellspacing="0"   data-loading="false">
 													<thead>
 														<tr>
 															<th class="table-checkbox" data-field='id' data-checkbox="true" width="19px">
@@ -169,7 +169,7 @@
 													</thead>
 												</table>						 						
 												<i class="fa"></i><strong>已关联用户</strong>
-												<table  id="roleuser_list" class="lion-datagrids table table-striped table-bordered table-hover" data-singleselect="false",    data-loadUrl="${base}/system/role/authusers.json"   data-checkbox="true" data-pageSize="3" cellspacing="0"   data-loading="false" >
+												<table  id="roleuser_list" class="lion-datagrids table table-striped table-bordered table-hover" data-singleselect="false",    data-loadurl="${base}/system/role/authusers.json"   data-checkbox="true" data-pagesize="3" cellspacing="0"   data-loading="false" >
 													<thead>
 														<tr>
 															<th class="table-checkbox" data-field='id' data-checkbox="true" width="19px">
@@ -193,7 +193,7 @@
 								<div  role="tabpanel" class="tab-pane fade" id="tab_3_2">
 									 <div class="row">
 										<div class="col-md-12">
-											<table  id="authgroup_list" class="lion-datagrids table table-striped table-bordered table-hover" data-singleselect="false",   data-loadUrl="${base}/system/role/groups.json"  data-loading="false"  data-checkbox="true" data-pageSize="5">
+											<table  id="authgroup_list" class="lion-datagrids table table-striped table-bordered table-hover" data-singleselect="false",   data-loadurl="${base}/system/role/groups.json"  data-loading="false"  data-checkbox="true" data-pagesize="5">
 												<thead>
 													<tr>
 														<th class="table-checkbox" data-field='id' data-checkbox="true"   >
@@ -217,7 +217,7 @@
 								<div role="tabpanel" class="tab-pane fade" id="tab_3_3">
 									<div class="row">
 										<div class="col-md-12">
-											<table  id="authuser_list" class="lion-datagrids table table-striped table-bordered table-hover" data-singleselect="false",   data-loadUrl="${base}/system/role/users.json"  data-loading="false"  data-checkbox="true" data-pageSize="5">
+											<table  id="authuser_list" class="lion-datagrids table table-striped table-bordered table-hover" data-singleselect="false",   data-loadurl="${base}/system/role/users.json"  data-loading="false"  data-checkbox="true" data-pagesize="5">
 												<thead>
 													<tr>
 														<th class="table-checkbox" data-field='id' data-checkbox="true"   >

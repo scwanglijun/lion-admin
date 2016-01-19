@@ -111,7 +111,7 @@
 			</div>
 			<div class="col-md-12">
 				<table class="lion-datagrids table table-striped table-bordered table-hover" id="sys_user_list_tb" data-singleselect="true",  
-				 data-loadUrl="${base}/system/user/list.json" data-checkbox="true" data-pageSize="10">
+				 data-loadurl="${base}/system/user/list.json" data-checkbox="true" data-pagesize="10">
 					<thead>
 						<tr>
 						  <th class="table-checkbox" data-field='id' data-checkbox="true"  style="width:30px;">
@@ -206,7 +206,7 @@
 											<div class="caption">
 												<i class="fa"></i><strong>已关联用户组</strong>
 											</div>									 
-												<table  id="usergroup_list" class="lion-datagrids table table-striped table-bordered table-hover" data-singleselect="false",    data-loadUrl="${base}/system/user/authgroup.json"  data-checkbox="true" data-pageSize="3" cellspacing="0" data-loading="false">
+												<table  id="usergroup_list" class="lion-datagrids table table-striped table-bordered table-hover" data-singleselect="false",    data-loadurl="${base}/system/user/authgroup.json"  data-checkbox="true" data-pagesize="3" cellspacing="0" data-loading="false">
 												<thead>
 													<tr>
 														<th class="table-checkbox" data-field='id' data-checkbox="true" >
@@ -229,7 +229,7 @@
 										<div class="caption">
 											<i class="fa"></i><strong>已关联角色</strong>
 										</div>
-										 <table  id="userrole_list" class="lion-datagrids table table-striped table-bordered table-hover" data-singleselect="false",   d  data-loadUrl="${base}/system/user/authroles.json"   data-checkbox="true" data-pageSize="3"     cellspacing="0"   data-loading="false" >
+										 <table  id="userrole_list" class="lion-datagrids table table-striped table-bordered table-hover" data-singleselect="false",     data-loadurl="${base}/system/user/authroles.json"   data-checkbox="true" data-pagesize="3"     cellspacing="0"   data-loading="false" >
 												<thead>
 													<tr>
 														<th class="table-checkbox" data-field='id' data-checkbox="true" >
@@ -250,7 +250,7 @@
 									</div>
 								</div>
 								<div  role="tabpanel" class="tab-pane fade" id="tab_3_2">
-									 <table  id="authgroup_list" class="lion-datagrids table table-striped table-bordered table-hover" data-singleselect="false",     data-loadUrl="${base}/system/user/groups.json"   data-checkbox="true" data-pageSize="5"  data-loading="false" >
+									 <table  id="authgroup_list" class="lion-datagrids table table-striped table-bordered table-hover" data-singleselect="false",     data-loadurl="${base}/system/user/groups.json"   data-checkbox="true" data-pagesize="5"  data-loading="false" >
 												<thead>
 													<tr>
 														<th class="table-checkbox" data-field='id' data-checkbox="true"   >
@@ -270,7 +270,7 @@
 											</table>
 								</div>
 								<div role="tabpanel" class="tab-pane fade" id="tab_3_3">
-									<table  id="authrole_list" class="lion-datagrids table table-striped table-bordered table-hover" data-singleselect="false",   data-loadUrl="${base}/system/user/roles.json"   data-checkbox="true" data-pageSize="5"   data-loading="false">
+									<table  id="authrole_list" class="lion-datagrids table table-striped table-bordered table-hover" data-singleselect="false",   data-loadurl="${base}/system/user/roles.json"   data-checkbox="true" data-pagesize="5"   data-loading="false">
 												<thead>
 													<tr>
 														<th class="table-checkbox" data-field='id' data-checkbox="true"   >
@@ -465,7 +465,7 @@
 														<div class="input-group">
 															 <input  id="departmentId"  name="departmentId"  
 					 	  	  placeholder="请选择部门…"  type="text" 
-					 		  class="lion-combotree form-control"   data-loadURL="${base}/system/department/comboxtree.json" data-width="200px" data-height="300px"/>
+					 		  class="lion-combotree form-control"   data-loadurl="${base}/system/department/comboxtree.json" data-width="200px" data-height="300px"/>
 														</div>
 													</div>
 												</div>												

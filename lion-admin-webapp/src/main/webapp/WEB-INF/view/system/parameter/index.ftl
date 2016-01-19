@@ -53,8 +53,8 @@
 					<label class="control-label col-md-2" for="sys_parameter_type" >参数类型</label>
 					<div class="col-md-3">
 					     <select  id="parameterCodeList" name="type"  placeholder="请选择参数列表..."  
-						 	class="lion-combo form-control select2 input-small" data-valueField='codeValue' 
-						 	data-textField='nameZh' data-URL="${base}/system/code/combox.htm?nameEn=SystemParamter">
+						 	class="lion-combo form-control select2 input-small" data-valuefield='codeValue' 
+						 	data-textfield='nameZh' data-url="${base}/system/code/combox.htm?nameEn=SystemParamter">
 						 </select>
 					</div>
 					<div class="col-md-1 ">
@@ -76,7 +76,7 @@
 				  data-singleselect="true",   
 				  data-loadurl="${base}/system/parameter/list.json" 
 				  data-checkbox="true" 
-				  data-pageSize="10" width="100%">
+				  data-pagesize="10" width="100%">
 					<thead>
 						<tr>
 						  <th class="table-checkbox"  style="width:30px;" data-field='id' data-checkbox="true">
@@ -127,7 +127,7 @@
 												<div class="form-group">
 													<label class="col-md-3 control-label">参数类型</label>
 													<div class="col-md-5">
-									<select  id="addParameterCodeList"  name="type" placeholder="请选择参数列表..."   class="lion-combo form-control select2  " data-valueField='codeValue'  data-textField='nameZh' data-URL="${base}/system/code/combox.htm?nameEn=SystemParamter"></select>
+									<select  id="addParameterCodeList"  name="type" placeholder="请选择参数列表..."   class="lion-combo form-control select2  " data-valuefield='codeValue'  data-textfield='nameZh' data-url="${base}/system/code/combox.htm?nameEn=SystemParamter"></select>
 													</div>
 												</div>
 												<div class="form-group">

@@ -54,8 +54,8 @@
 						<@spring.message "sys.codeType.query.type.text"/>
 					</label>
 					<div class="col-md-3">					  
-						 <select  id="idCodeTypeList"  name="type" placeholder="<@spring.message "sys.codeType.form.type.missing.message"/>..."  class="lion-combo form-control select2  " data-valueField='codeValue'  data-textField='nameZh' 
-						 data-URL="${base}/system/code/combox.htm?nameEn=codeTypes">
+						 <select  id="idCodeTypeList"  name="type" placeholder="<@spring.message "sys.codeType.form.type.missing.message"/>..."  class="lion-combo form-control select2  " data-valuefield='codeValue'  data-textfield='nameZh'
+						 data-url="${base}/system/code/combox.htm?nameEn=codeTypes">
 						</select>	
 					</div>
 					<div class="col-md-2">
@@ -90,7 +90,7 @@
 				</a>
 			</div>
 			<div class="col-md-12">
-				  <table class="lion-datagrids table table-striped table-bordered table-hover" id="sys_codetype_lists_tb" data-singleselect="true",   data-loadUrl="${base}/system/codetype/list.json" data-checkbox="true" data-pageSize="10">
+				  <table class="lion-datagrids table table-striped table-bordered table-hover" id="sys_codetype_lists_tb" data-singleselect="true",   data-loadurl="${base}/system/codetype/list.json" data-checkbox="true" data-pagesize="10">
 					<thead>
 						<tr>
 							<th class="table-checkbox" data-field='id' data-checkbox="true">
@@ -150,7 +150,7 @@
 														<@spring.message "sys.codeType.form.type.text"/>
 													</label>
 													<div class="col-md-5">										 
-															 <select  id="codeTypeList"  name="type" placeholder="<@spring.message "sys.codeType.form.type.missing.message"/>..."  class="lion-combo form-control select2  " data-valueField='codeValue'  data-textField='nameZh' data-URL="${base}/system/code/combox.htm?nameEn=codeTypes">
+															 <select  id="codeTypeList"  name="type" placeholder="<@spring.message "sys.codeType.form.type.missing.message"/>..."  class="lion-combo form-control select2  " data-valuefield='codeValue'  data-textfield='nameZh' data-url="${base}/system/code/combox.htm?nameEn=codeTypes">
 															 </select>						 
 													</div>
 												</div>

@@ -56,8 +56,8 @@
 					</label>
 					<div class="col-md-3">
 						<select  id="reminderType" name="reminderType"  style="width:225px" placeholder="<@spring.message "sys.reminder.query.class.missing.text.message"/>..."  
-							 	class="lion-combo form-control select2" data-valueField='codeValue' 
-							 	data-textField='nameZh' data-URL="${base}/system/code/combox.htm?nameEn=ReminderType">
+							 	class="lion-combo form-control select2" data-valuefield='codeValue'
+							 	data-textfield='nameZh' data-url="${base}/system/code/combox.htm?nameEn=ReminderType">
 						</select>
 					</div>
 					<div class="col-md-2">
@@ -93,7 +93,7 @@
 				</a>
 			</div>
 			<div class="col-md-12">
-		    	<table class="lion-datagrids table table-striped table-bordered table-hover" id="sys_reminder_tb" data-singleselect="true",   data-loadUrl="${base}/system/reminder/list.json" data-checkbox="true" data-pageSize="10">
+		    	<table class="lion-datagrids table table-striped table-bordered table-hover" id="sys_reminder_tb" data-singleselect="true",   data-loadurl="${base}/system/reminder/list.json" data-checkbox="true" data-pagesize="10">
 			    	<thead>
 		  					<th class="table-checkbox" data-field='id' data-checkbox="true">
 		  						<input type="checkbox" class="group-checkable" data-set="#sys_reminder_tb.checkboxes"  data-sortable="false" /></th>
@@ -185,8 +185,8 @@
 									<div class="col-md-5">
 										<div class="input-group">
 											<select  id="reminderType" name="reminderType"  style="width:225px" placeholder="<@spring.message "sys.reminder.query.class.missing.text.message"/>..."  
-							 	class="lion-combo form-control select2" data-valueField='codeValue' 
-							 	data-textField='nameZh' data-URL="${base}/system/code/combox.htm?nameEn=ReminderType">
+							 	class="lion-combo form-control select2" data-valuefield='codeValue'
+							 	data-textfield='nameZh' data-url="${base}/system/code/combox.htm?nameEn=ReminderType">
 											</select>
 										</div>
 									</div>
