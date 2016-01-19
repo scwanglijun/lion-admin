@@ -92,6 +92,7 @@ ${head}
 <script src="${base}/resources/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
 <!-- END CORE PLUGINS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="${base}/resources/global/js/lang/<@spring.message "browser.language"/>.js" type="text/javascript"></script>
 <script src="${base}/resources/global/scripts/metronic.js" type="text/javascript"></script>
 <script src="${base}/resources/admin/layout4/scripts/layout.js" type="text/javascript"></script>
 <script src="${base}/resources/admin/pages/scripts/tasks.js" type="text/javascript"></script>

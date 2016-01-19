@@ -54,20 +54,7 @@
         loading:true,//是否立即加载数据
         checkbox:false,//显示复选框
         paginate:true,//是否显示分页
-        language: {
-                'aria': {
-                    'sortAscending': ':',
-                    'sortDescending': ':'
-                },
-                'emptyTable': '无记录',
-                'info': '从 _START_ 到 _END_ / 共 _TOTAL_ 条数据',
-                'infoEmpty': '无记录',
-                'infoFiltered': '(从 _MAX_ 条记录过滤)',
-                'lengthMenu': '每页显示 _MENU_ 条数据',
-                'search': '查找:',
-                'sProcessing' : '数据加载中...',
-                'zeroRecords': '没有找到'
-        },//语言选项
+        language: lion.lang,//语言选项
         column:{field:'',//字段名称
                 formatter:'',//格式化函数
                 sortable:true,//默认为可排序 true
