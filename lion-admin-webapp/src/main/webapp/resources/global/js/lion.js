@@ -33,7 +33,8 @@ lion.constant={
   * 例如:ui-button-id
   */ 
 lion.assemblyCache={};
-lion.lang = $lang;
+
+
 /**
  * 
  * util
