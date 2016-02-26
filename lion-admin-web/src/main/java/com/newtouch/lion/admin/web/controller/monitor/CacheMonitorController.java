@@ -11,7 +11,6 @@ import com.newtouch.lion.json.JSONParser;
 import com.newtouch.lion.model.cache.CacheManagerModel;
 import com.newtouch.lion.model.cache.CacheModel;
 import com.newtouch.lion.service.cache.ApplicationCacheManager;
-import com.newtouch.lion.service.cache.ApplicationCacheService;
 import com.newtouch.lion.service.datagrid.DataColumnService;
 import com.newtouch.lion.web.controller.AbstractController;
 import com.newtouch.lion.web.message.BindMessage;
@@ -54,8 +53,7 @@ public class CacheMonitorController extends AbstractController{
 	private ApplicationCacheManager applicationCacheManager;
 	@Autowired
 	private DataColumnService dataColumnService;
-	@Autowired
-	private ApplicationCacheService applicationCacheService;
+
 	/***
 	 *缓存监控首页
 	 */
@@ -91,10 +89,10 @@ public class CacheMonitorController extends AbstractController{
 		}
 		if(StringUtils.isEmpty(cacheVo.getCacheName())){
 			logger.info("清缓存");
-			applicationCacheService.clear(cacheVo.getEhcacheName());
+			applicationCacheManager.clear(cacheVo.getEhcacheName());
 			return new BindMessage(Boolean.TRUE,"{0}清除成功!",new Object[]{cacheVo.getEhcacheName()});
 		}
-		applicationCacheService.clear(cacheVo.getEhcacheName(),cacheVo.getCacheName());
+		applicationCacheManager.clear(cacheVo.getEhcacheName(),cacheVo.getCacheName());
 		return  new BindMessage(Boolean.TRUE,"{0}-{1}清除成功!",new Object[]{cacheVo.getEhcacheName(),cacheVo.getCacheName()});
 	}
 }
