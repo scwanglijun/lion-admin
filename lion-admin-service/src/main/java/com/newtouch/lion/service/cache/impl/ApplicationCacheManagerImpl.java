@@ -26,7 +26,7 @@ import java.util.Map;
  * 缓存查询类,可删除缓存
  * Created by wanglijun on 16/1/5.
  */
-@Service
+
 public class ApplicationCacheManagerImpl  extends AbstractApplicationCacheManager implements ApplicationCacheService{
 
 

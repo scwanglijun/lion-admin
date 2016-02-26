@@ -4,7 +4,7 @@
   <groupId>com.newtouch.lion</groupId>
   <artifactId>com.newtouch.lion-admin</artifactId>
   <packaging>pom</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.1-SNAPSHOT</version>
   <name>lion Admin</name>
   <url>http://lion.newtouch.com</url>
   <modules>
@@ -12,6 +12,7 @@
     <module>lion-admin-api</module>
     <module>lion-admin-dao</module>
     <module>lion-admin-service</module>
+    <module>lion-admin-web</module>
     <module>lion-admin-webapp</module>
   </modules>
 </project>

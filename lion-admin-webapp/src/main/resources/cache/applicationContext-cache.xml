@@ -31,9 +31,6 @@
 	<bean id="sysParameterCache" class="com.newtouch.lion.cache.impl.EhCacheBasedObjectCache">
 		<property name="cache"  ref="sysParameterEhCache"/>
 	</bean>
-
-
-
 	<util:list  id="abstractInitializedCaches"  list-class="java.util.ArrayList" value-type="com.newtouch.lion.cache.load.impl.AbstractInitializedCacheImpl">
 		<!--初始化Code缓存  -->
 		<ref  bean="parameterCacheService"/>
