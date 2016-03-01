@@ -1,5 +1,3 @@
-<#import "/WEB-INF/tags/lion.ftl" as lion>
-<#import "/WEB-INF/tags/spring.ftl" as spring>
 <!DOCTYPE html>
 <!-- 
 Template Name: Newtouch Admin Dashboard Template build with Twitter Bootstrap 3.3.1
@@ -50,17 +48,17 @@ ${head}
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
 <body class="page-header-fixed page-sidebar-closed-hide-logo page-sidebar-closed-hide-logo">
-<#include "header.ftl"/> 
+<#include "header.html"/>
 <!-- BEGIN PAGE -->
 <!-- BEGIN CONTAINER -->
 <div class="page-container">
 	<!-- BEGIN SIDEBAR -->
-	<#include "menu.ftl"/> 
+
 	<!-- END SIDEBAR -->
 	<!-- BEGIN CONTENT -->
 	<div class="page-content-wrapper">
 		<div class="page-content">
-			<#include "navigationbar.ftl">
+
 			<!-- BEGIN PAGE CONTENT INNER -->
 		 	${body}
 			<!-- END PAGE CONTENT INNER -->
@@ -71,7 +69,7 @@ ${head}
 <!-- END CONTAINER -->
 <!-- END PAGE --> 
 <!-- BEGIN FOOTER -->
-<#include "footer.ftl"> 
+
 <!-- END FOOTER -->
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
 <!-- BEGIN CORE PLUGINS -->

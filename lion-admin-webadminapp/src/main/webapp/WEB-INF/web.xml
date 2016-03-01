@@ -71,10 +71,10 @@
 		</init-param>
 	</filter>
 	<!--SiteMash Definision -->
-	<filter>
-		<filter-name>sitemesh</filter-name>
-		<filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter</filter-class>
-	</filter>
+	<!--<filter>-->
+		<!--<filter-name>sitemesh</filter-name>-->
+		<!--<filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter</filter-class>-->
+	<!--</filter>-->
 	<!-- Filter Definitions Start -->
 
 	<!-- Filter Mappings Start -->
@@ -93,10 +93,8 @@
 		<filter-name>shiroFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
-	<filter-mapping>
-		<filter-name>sitemesh</filter-name>
-		<url-pattern>/*</url-pattern>
-	</filter-mapping>
+	<!--<filte
+	-->
 	<!--Shiro Fitler mapping -->
 	<!-- Filter Mappings End -->
 
@@ -114,23 +112,23 @@
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 
-	<servlet>
-		<servlet-name>sitemeshServlet</servlet-name>
-		<servlet-class>com.newtouch.lion.web.sitemash.SitemeshFreemarkerDecoratorServlet</servlet-class>
-		<init-param>
-			<param-name>TemplatePath</param-name>
-			<param-value>/</param-value>
-		</init-param>
-		<init-param>
-			<param-name>NoCache</param-name>
-			<param-value>true</param-value>
-		</init-param>
-		<init-param>
-			<param-name>default_encoding</param-name>
-			<param-value>UTF-8</param-value>
-		</init-param>
-		<load-on-startup>2</load-on-startup>
-	</servlet>
+	<!--<servlet>-->
+		<!--<servlet-name>sitemeshServlet</servlet-name>-->
+		<!--<servlet-class>com.newtouch.lion.web.sitemash.SitemeshFreemarkerDecoratorServlet</servlet-class>-->
+		<!--<init-param>-->
+			<!--<param-name>TemplatePath</param-name>-->
+			<!--<param-value>/</param-value>-->
+		<!--</init-param>-->
+		<!--<init-param>-->
+			<!--<param-name>NoCache</param-name>-->
+			<!--<param-value>true</param-value>-->
+		<!--</init-param>-->
+		<!--<init-param>-->
+			<!--<param-name>default_encoding</param-name>-->
+			<!--<param-value>UTF-8</param-value>-->
+		<!--</init-param>-->
+		<!--<load-on-startup>2</load-on-startup>-->
+	<!--</servlet>-->
 	<servlet>
 		<servlet-name>DruidStatView</servlet-name>
 		<servlet-class>com.alibaba.druid.support.http.StatViewServlet</servlet-class>
@@ -146,10 +144,10 @@
 		<servlet-name>dispatcherServlet</servlet-name>
 		<url-pattern>*.json</url-pattern>
 	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>sitemeshServlet</servlet-name>
-		<url-pattern>*.ftl</url-pattern>
-	</servlet-mapping>
+	<!--<servlet-mapping>-->
+		<!--<servlet-name>sitemeshServlet</servlet-name>-->
+		<!--<url-pattern>*.ftl</url-pattern>-->
+	<!--</servlet-mapping>-->
 	<servlet-mapping>
 		<servlet-name>DruidStatView</servlet-name>
 		<url-pattern>/druid/*</url-pattern>
