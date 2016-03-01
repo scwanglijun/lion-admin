@@ -20,7 +20,7 @@
 	</excludes>
 	
 	<!-- 主装饰器 -->
-	<decorator name="main" page="sitemesh.ftl">
+	<decorator name="main" page="sitemesh.html">
 		<pattern>*.htm</pattern>
 	</decorator>
 </decorators>
