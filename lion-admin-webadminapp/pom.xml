@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
         <groupId>com.newotuch.lion</groupId>
         <artifactId>lion-admin-parent</artifactId>
@@ -9,18 +7,26 @@
         <relativePath>../lion-admin-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>lion-admin-webadminapp</artifactId>
+    <artifactId>com.newtouch.lion-webadminapp</artifactId>
     <version>1.1-SNAPSHOT</version>
     <groupId>com.newtouch.lion</groupId>
-    <name>lion-admin-webapp</name>
-    <packaging>pom</packaging>
+    <name>lion-admin-webadminapp</name>
+    <packaging>war</packaging>
     <url>http://lion.newtouch.com</url>
     <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>com.newtouch.lion</groupId>
             <artifactId>lion-admin-web</artifactId>
             <version>${lion-admin-web.version}</version>
         </dependency>
     </dependencies>
-
+    <build>
+        <finalName>com.newtouch.lion-webadminapp</finalName>
+    </build>
 </project>

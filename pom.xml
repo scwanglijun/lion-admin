@@ -14,5 +14,6 @@
     <module>lion-admin-service</module>
     <module>lion-admin-web</module>
     <module>lion-admin-webapp</module>
+    <module>lion-admin-webadminapp</module>
   </modules>
 </project>
